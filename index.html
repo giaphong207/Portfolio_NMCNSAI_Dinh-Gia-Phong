@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 👉 THAY [Tên của em] bằng họ tên thật của em (hiện ở tiêu đề tab trình duyệt) -->
+  <!-- 👉 THAY [Tên của em] (hiện ở tiêu đề tab) -->
   <title>Portfolio — [Tên của em]</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== THANH ĐIỀU HƯỚNG (giống hệt trên cả 3 trang) ===== -->
+  <!-- ===== ĐIỀU HƯỚNG (giống nhau trên cả 3 trang) ===== -->
   <header class="topbar">
     <nav class="nav">
-      <!-- 👉 THAY tên trong logo. Phần trong <span> sẽ hiện màu nhấn -->
-      <a class="brand" href="index.html">[Tên]<span>.dev</span></a>
+      <!-- 👉 THAY tên trong logo -->
+      <a class="brand" href="index.html"><span class="dot"></span>[Tên]<span>.dev</span></a>
       <ul class="nav-links">
         <li><a href="index.html" class="is-active">Giới thiệu</a></li>
         <li><a href="projects.html">Dự án</a></li>
@@ -29,16 +29,24 @@
   <section class="hero">
     <div class="wrap">
       <span class="kicker rise d1">Digital Portfolio · 2026</span>
-      <!-- 👉 THAY tên + một câu định vị bản thân. Chữ trong <em> sẽ in nghiêng màu nhấn -->
-      <h1 class="rise d2">[Họ và tên của em]<br />sinh viên <em>Khoa học Máy tính</em></h1>
+      <!-- 👉 THAY tên. Chữ trong .accent sẽ phát sáng màu xanh -->
+      <h1 class="rise d2">[Họ và tên]<br /><span class="accent">Khoa học Máy tính</span></h1>
       <p class="lede rise d3">
-        <!-- 👉 1–2 câu giới thiệu ngắn: em là ai, đang học gì, quan tâm điều gì.
-             Ví dụ: "Mình tập hợp ở đây những kỹ năng số và AI đã học trong môn Nhập môn
-             Công nghệ số — từ quản lý dữ liệu đến viết prompt và dùng AI có trách nhiệm." -->
+        <!-- 👉 1–2 câu giới thiệu ấn tượng. VD: "Nơi mình tập hợp các kỹ năng số và AI
+             đã học — từ quản lý dữ liệu, viết prompt, đến dùng AI có trách nhiệm." -->
         [Một hoặc hai câu giới thiệu ngắn gọn và ấn tượng về bản thân em.]
       </p>
-      <div class="rise d4" style="margin-top:30px;">
-        <a class="btn" href="projects.html">Xem các dự án →</a>
+      <div class="hero-cta rise d4">
+        <a class="btn" href="projects.html">Khám phá dự án →</a>
+        <a class="btn btn-ghost" href="conclusion.html">Tổng kết</a>
+      </div>
+
+      <!-- Dải thông số trang trí (sửa số/chữ tuỳ ý, hoặc xoá nếu không thích) -->
+      <div class="stat-strip rise d4">
+        <div class="stat"><div class="n">06</div><div class="l">Nhiệm vụ</div></div>
+        <div class="stat"><div class="n">2026</div><div class="l">Năm học</div></div>
+        <div class="stat"><div class="n">AI</div><div class="l">Trọng tâm</div></div>
+        <div class="stat"><div class="n">CS</div><div class="l">Chuyên ngành</div></div>
       </div>
     </div>
   </section>
@@ -46,48 +54,49 @@
   <!-- ===== VỀ TÔI ===== -->
   <section class="section">
     <div class="wrap">
-      <span class="kicker">Về tôi</span>
-      <h2>Đôi nét giới thiệu</h2>
-      <!-- 👉 THAY nội dung: họ tên đầy đủ, ngành học, trường, và sở thích.
-           Viết 1–2 đoạn tự nhiên, bằng giọng của em. -->
-      <p>
-        Mình là <strong>[họ tên]</strong>, sinh viên ngành <strong>Khoa học Máy tính</strong>
-        tại <strong>[tên trường]</strong>. [Viết thêm về sở thích, lĩnh vực em quan tâm
-        trong công nghệ — ví dụ lập trình, AI, dữ liệu, thiết kế...]
-      </p>
+      <div class="panel hud">
+        <span class="kicker">Về tôi</span>
+        <h2>Đôi nét giới thiệu</h2>
+        <!-- 👉 THAY: họ tên, ngành, trường, sở thích -->
+        <p>
+          Mình là <strong>[họ tên]</strong>, sinh viên ngành <strong>Khoa học Máy tính</strong>
+          tại <strong>[tên trường]</strong>. [Viết thêm về sở thích và lĩnh vực công nghệ em quan tâm
+          — lập trình, AI, dữ liệu, an ninh mạng...]
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- ===== MỤC TIÊU HỌC TẬP & ĐỊNH HƯỚNG ===== -->
+  <!-- ===== MỤC TIÊU HỌC TẬP ===== -->
   <section class="section">
     <div class="wrap">
-      <span class="kicker">Định hướng</span>
-      <h2>Mục tiêu học tập &amp; phát triển cá nhân</h2>
-      <!-- 👉 THAY nội dung: em muốn đạt được gì trong môn học này và xa hơn? -->
-      <p>
-        [Chia sẻ mục tiêu học tập của em trong môn Nhập môn Công nghệ số &amp; Ứng dụng AI,
-        và định hướng phát triển cá nhân — em muốn trở thành kiểu người làm nghề như thế nào?]
-      </p>
+      <div class="panel hud">
+        <span class="kicker">Định hướng</span>
+        <h2>Mục tiêu học tập &amp; phát triển</h2>
+        <!-- 👉 THAY nội dung -->
+        <p>[Mục tiêu của em trong môn Nhập môn Công nghệ số &amp; Ứng dụng AI, và định hướng
+           phát triển cá nhân — em muốn trở thành kiểu người làm nghề thế nào?]</p>
+      </div>
     </div>
   </section>
 
   <!-- ===== MỤC TIÊU CỦA PORTFOLIO ===== -->
   <section class="section">
     <div class="wrap">
-      <span class="kicker">Mục tiêu</span>
-      <h2>Portfolio này để làm gì?</h2>
-      <!-- 👉 Có thể giữ nguyên 2 gạch đầu dòng mẫu dưới, hoặc viết lại theo ý em -->
-      <ul>
-        <li>Thể hiện các kỹ năng số đã học được qua từng bài tập trong môn học.</li>
-        <li>Lưu trữ sản phẩm cá nhân ở một nơi gọn gàng, dễ truy cập và dễ chia sẻ.</li>
-        <li>[Thêm một mục tiêu nữa của riêng em nếu muốn.]</li>
-      </ul>
+      <div class="panel hud">
+        <span class="kicker">Mục tiêu</span>
+        <h2>Portfolio này để làm gì?</h2>
+        <ul>
+          <li>Thể hiện các kỹ năng số đã học qua từng bài tập trong môn học.</li>
+          <li>Lưu trữ sản phẩm cá nhân ở một nơi gọn gàng, dễ truy cập và chia sẻ.</li>
+          <li>[Thêm một mục tiêu của riêng em nếu muốn.]</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- ===== CHÂN TRANG ===== -->
   <footer class="foot">
-    <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding:0;">
+    <div class="wrap">
       <span>© 2026 · [Tên của em]</span>
       <span>Nhập môn Công nghệ số &amp; Ứng dụng AI</span>
     </div>
