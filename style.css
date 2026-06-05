@@ -1,0 +1,358 @@
+/* =========================================================
+   PORTFOLIO — STYLE.CSS
+   Bảng màu, font, bố cục dùng chung cho cả 3 trang.
+   Em hầu như KHÔNG cần sửa file này. Nếu muốn đổi màu chủ đạo,
+   chỉ cần đổi giá trị --accent ở ngay khối :root bên dưới.
+   ========================================================= */
+
+:root {
+  /* --- Màu --- */
+  --paper:      #F3EEE3;   /* nền giấy ngả kem */
+  --paper-2:    #ECE4D4;   /* nền khối/thẻ, đậm hơn nền chính một chút */
+  --ink:        #1C1A17;   /* chữ chính, gần đen, hơi ấm */
+  --ink-soft:   #6A6354;   /* chữ phụ, nâu xám */
+  --accent:     #BF532A;   /* MÀU NHẤN — đổi mã này là đổi tông cả web */
+  --accent-deep:#8E3C1C;
+  --line:       rgba(28, 26, 23, 0.14);
+
+  /* --- Font --- */
+  --display: "Fraunces", Georgia, serif;
+  --body:    "Hanken Grotesk", system-ui, sans-serif;
+  --mono:    "JetBrains Mono", "Courier New", monospace;
+
+  --maxw: 1080px;
+}
+
+/* --- Reset nhẹ --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Lớp giấy nhám rất mờ tạo chiều sâu (không bắt buộc, thuần trang trí) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+/* =========================================================
+   LAYOUT CHUNG
+   ========================================================= */
+.wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 28px; position: relative; z-index: 1; }
+
+.kicker {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.kicker::before { content: "→"; }
+
+/* =========================================================
+   THANH ĐIỀU HƯỚNG (dùng chung 3 trang)
+   ========================================================= */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(243, 238, 227, 0.82);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.brand span { color: var(--accent); }
+.nav-links { display: flex; gap: 26px; list-style: none; }
+.nav-links a {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.2s ease;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 2px;
+  background: var(--accent);
+  transition: width 0.28s ease;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-links a:hover::after,
+.nav-links a.is-active::after { width: 100%; }
+.nav-links a.is-active { color: var(--ink); font-weight: 600; }
+
+/* =========================================================
+   HERO (trang Giới thiệu)
+   ========================================================= */
+.hero { padding: 90px 0 70px; border-bottom: 1px solid var(--line); }
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 18px 0 22px;
+}
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero .lede {
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  color: var(--ink-soft);
+  max-width: 620px;
+}
+
+/* =========================================================
+   TIÊU ĐỀ TRANG (Dự án / Tổng kết)
+   ========================================================= */
+.page-head { padding: 70px 0 40px; border-bottom: 1px solid var(--line); }
+.page-head h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-top: 14px;
+}
+.page-head p { color: var(--ink-soft); max-width: 640px; margin-top: 16px; }
+
+/* =========================================================
+   KHỐI NỘI DUNG CHUNG
+   ========================================================= */
+.section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+.section:last-of-type { border-bottom: none; }
+.section h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  letter-spacing: -0.01em;
+  margin: 12px 0 18px;
+}
+.section p { margin-bottom: 16px; max-width: 720px; }
+.section ul { margin: 4px 0 16px 1.1em; max-width: 720px; }
+.section li { margin-bottom: 8px; }
+.lead { font-size: 1.18rem; color: var(--ink); }
+
+a.inline { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+/* =========================================================
+   THẺ DỰ ÁN (6 nhiệm vụ)
+   ========================================================= */
+.project {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 8px 28px;
+}
+.project:last-child { border-bottom: none; }
+.project .num {
+  font-family: var(--display);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--accent);
+  font-feature-settings: "ss01";
+}
+.project .head .src {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  padding: 3px 9px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.project h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+.project .body { grid-column: 2; }
+.project .body p { max-width: 720px; margin-bottom: 14px; }
+
+/* Tiểu mục: Mục tiêu / Quá trình / Sản phẩm */
+.subhead {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin: 22px 0 6px;
+  display: block;
+}
+
+/* Khung "Phản tư / Vì sao" — chính phần này kéo điểm lên Mức 4 */
+.reflect {
+  margin-top: 22px;
+  padding: 18px 22px;
+  background: var(--paper-2);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+}
+.reflect .label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  display: block;
+  margin-bottom: 8px;
+}
+.reflect p { margin-bottom: 0; font-size: 0.98rem; }
+
+/* Khối code / quy tắc đặt tên / prompt — hợp gu CS */
+.code {
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  background: var(--ink);
+  color: #EDE7D8;
+  padding: 16px 18px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 10px 0 16px;
+  line-height: 1.6;
+}
+
+/* Ảnh chụp minh hoạ + chú thích */
+figure { margin: 16px 0 18px; }
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+figcaption {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  margin-top: 8px;
+}
+.img-placeholder {
+  border: 1.5px dashed var(--accent);
+  border-radius: 8px;
+  background: var(--paper-2);
+  padding: 38px 20px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+/* Nhúng video (tỉ lệ 16:9) */
+.video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  margin: 12px 0 16px;
+}
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* =========================================================
+   NÚT / LIÊN KẾT NỔI BẬT
+   ========================================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 0.86rem;
+  letter-spacing: 0.04em;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 13px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.btn:hover { background: var(--accent); transform: translateY(-2px); }
+
+/* =========================================================
+   CHÂN TRANG
+   ========================================================= */
+.foot {
+  padding: 38px 0;
+  border-top: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.foot a { color: var(--ink-soft); text-decoration: none; }
+.foot a:hover { color: var(--accent); }
+
+/* =========================================================
+   HIỆU ỨNG HIỆN DẦN KHI TẢI TRANG
+   ========================================================= */
+.rise { opacity: 0; transform: translateY(18px); animation: rise 0.7s cubic-bezier(.2,.7,.3,1) forwards; }
+.d1 { animation-delay: 0.05s; }
+.d2 { animation-delay: 0.15s; }
+.d3 { animation-delay: 0.25s; }
+.d4 { animation-delay: 0.35s; }
+@keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise { animation: none; opacity: 1; transform: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* =========================================================
+   ĐIỆN THOẠI
+   ========================================================= */
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 0.85rem; }
+  .brand { font-size: 0.8rem; }
+  .project { grid-template-columns: 1fr; }
+  .project .num { font-size: 2.4rem; }
+  .project .body { grid-column: 1; }
+  .hero { padding: 60px 0 48px; }
+}
