@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dự án — [Tên của em]</title>
+<title>Dự án — Đinh Gia Phong</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -28,7 +28,7 @@
 
 <header class="topbar">
   <nav class="nav">
-    <a class="brand" href="index.html"><span class="dot"></span>[Tên]<span>.dev</span></a>
+    <a class="brand" href="index.html"><span class="dot"></span>Phong<span>.dev</span></a>
     <ul class="nav-links">
       <li><a href="index.html">Giới thiệu</a></li>
       <li><a href="projects.html" class="is-active">Dự án</a></li>
@@ -47,113 +47,429 @@
 <div class="wrap">
 
   <article class="panel hud project">
-    <div class="num">01</div><div class="head"><span class="src">Bài 1 · Mục 1.4</span><h3>Thao tác với tệp tin &amp; thư mục</h3></div>
+    <div class="num">01</div><div class="head"><span class="src">Bài 1 · Máy tính &amp; thiết bị ngoại vi</span><h3>Thao tác với tệp tin &amp; thư mục</h3></div>
     <div class="body">
-      <span class="subhead">Mục tiêu</span><p>[Tổ chức tệp/thư mục khoa học và đặt tên nhất quán.]</p>
-      <span class="subhead">Quá trình</span><p>[Em đã thiết kế cấu trúc thư mục ra sao, quy tắc đặt tên thế nào.]</p>
-      <div class="code">YYYYMMDD_TenMon_LoaiTaiLieu_v01.pdf
+      <span class="subhead">Mục tiêu</span><p>Tổ chức toàn bộ tài liệu học tập theo một hệ thống thư mục khoa học và đặt tên nhất quán, để có thể truy xuất bất kỳ tệp nào trong vài giây và kiểm soát phiên bản hiệu quả.</p>
+      <span class="subhead">Quá trình</span><p>Mình thiết kế cây thư mục phân cấp theo chức năng (mỗi môn một nhánh, tách Tài liệu / Bài tập / Tham khảo), thực hành đầy đủ các thao tác trên File Explorer, rồi áp một quy ước đặt tên thống nhất cho mọi tệp.</p>
+      <div class="code">[Ngày] _ [Môn] _ [Loại] _ [Phiên bản]
 20260605_NhapMonCNS_BaiTap1_v02.docx</div>
       <span class="subhead">Sản phẩm — ảnh minh hoạ</span>
       <div class="gallery-art">
         <div class="shot-empty span-2 row-2"><div><span>＋</span>Ảnh lớn: cây thư mục<br>images/thu-muc.png</div></div>
-        <div class="shot-empty"><div><span>＋</span>Ảnh phụ</div></div>
-        <div class="shot-empty"><div><span>＋</span>Ảnh phụ</div></div>
+        <div class="shot-empty"><div><span>＋</span>Thao tác Copy/Cut</div></div>
+        <div class="shot-empty"><div><span>＋</span>Thùng rác</div></div>
         <div class="shot-empty span-2"><div><span>＋</span>Ảnh quy tắc đặt tên</div></div>
       </div>
-      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Giải thích VÌ SAO em chọn cách tổ chức &amp; đặt tên này — giúp tìm kiếm, sắp xếp, quản lý phiên bản ra sao.]</p></div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>Tiền tố ngày <code>YYYYMMDD</code> giúp hệ điều hành tự sắp xếp tệp theo thời gian; hậu tố phiên bản (v01, v02…) xoá bỏ nỗi ám ảnh "bản cuối cùng thật". Với người học Khoa học Máy tính phải quản lý hàng trăm tệp mã nguồn, cách này là nền tảng để không bao giờ lạc mất một bản nháp.</p></div>
+      <button class="detail-btn" data-modal="m1" type="button">Xem báo cáo chi tiết →</button>
     </div>
   </article>
 
   <article class="panel hud project">
-    <div class="num">02</div><div class="head"><span class="src">Bài 2 · Mục 2.4</span><h3>Tìm kiếm &amp; đánh giá thông tin học thuật</h3></div>
+    <div class="num">02</div><div class="head"><span class="src">Bài 2 · Khai thác dữ liệu &amp; thông tin</span><h3>Tìm kiếm &amp; đánh giá thông tin học thuật</h3></div>
     <div class="body">
-      <span class="subhead">Mục tiêu</span><p>[Dùng toán tử tìm kiếm nâng cao và đánh giá độ tin cậy của nguồn.]</p>
-      <span class="subhead">Quá trình</span><p>[Liệt kê các truy vấn em dùng — cố gắng ≥4 toán tử khác nhau.]</p>
-      <div class="code">"học máy" site:edu.vn filetype:pdf
-machine learning intitle:survey -wikipedia</div>
+      <span class="subhead">Mục tiêu</span><p>Vận dụng các toán tử tìm kiếm nâng cao để khai thác nguồn học thuật chất lượng cho chủ đề <strong>"Ứng dụng AI trong An ninh mạng"</strong>, và đánh giá độ tin cậy của tài liệu theo tiêu chí có hệ thống.</p>
+      <span class="subhead">Quá trình</span><p>Mình tìm trên 5 loại nguồn (CSDL học thuật, tạp chí chuyên ngành, sách chuyên khảo, blog hãng bảo mật, báo cáo/tiêu chuẩn) để lọc ra 12 tài liệu, trong đó có 6 bài báo bình duyệt.</p>
+      <div class="code">"deep learning" intrusion detection filetype:pdf
+malware detection site:ieee.org
+machine learning AND (cybersecurity OR "network security")
+"graph neural network" intitle:survey -blog</div>
       <span class="subhead">Sản phẩm — ảnh kết quả tìm kiếm</span>
       <div class="gallery">
         <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 1</div></div>
         <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 2</div></div>
         <div class="shot-empty"><div><span>＋</span>Bảng đánh giá nguồn</div></div>
       </div>
-      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Phân tích chiến lược tìm kiếm: vì sao mỗi toán tử lọc đúng nguồn hơn, và em đánh giá độ tin cậy dựa trên điều gì.]</p></div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>Mỗi toán tử đóng một vai trò lọc cụ thể: <code>filetype:pdf</code> ưu tiên tài liệu đầy đủ, <code>site:</code> giới hạn trong nền tảng uy tín, <code>intitle:</code> tìm đúng bài tổng quan, dấu <code>-</code> loại nhiễu. Mình đánh giá độ tin cậy dựa trên 5 tiêu chí, quan trọng nhất là phương pháp nghiên cứu và uy tín nơi xuất bản.</p></div>
+      <button class="detail-btn" data-modal="m2" type="button">Xem báo cáo chi tiết →</button>
     </div>
   </article>
 
   <article class="panel hud project">
-    <div class="num">03</div><div class="head"><span class="src">Bài 3 · Mục 3.4</span><h3>Viết Prompt hiệu quả cho tác vụ học tập</h3></div>
+    <div class="num">03</div><div class="head"><span class="src">Bài 3 · Tổng quan về Trí tuệ nhân tạo</span><h3>Viết Prompt hiệu quả cho tác vụ học tập</h3></div>
     <div class="body">
-      <span class="subhead">Mục tiêu</span><p>[So sánh prompt ban đầu &amp; prompt cải tiến, rút ra nguyên tắc.]</p>
+      <span class="subhead">Mục tiêu</span><p>So sánh hiệu quả của prompt qua 3 cấp độ (Cơ bản → Cải tiến → Nâng cao) trên 3 tác vụ học tập khác nhau, từ đó rút ra một bộ nguyên tắc viết prompt: <strong>mô hình 4C</strong>.</p>
       <span class="subhead">Quá trình</span>
-      <p><strong>Prompt ban đầu:</strong></p><div class="code">[Dán prompt đầu tiên — thường ngắn, chung chung]</div>
-      <p><strong>Prompt cải tiến</strong> (thêm vai trò, bối cảnh, ràng buộc, định dạng):</p><div class="code">[Dán prompt đã cải tiến]</div>
+      <p><strong>Prompt cơ bản</strong> (giải thích Blockchain) — ngắn, chung chung:</p><div class="code">Blockchain là gì? Giải thích giúp tôi.</div>
+      <p><strong>Prompt nâng cao</strong> (thêm vai trò, bối cảnh, ràng buộc, tư duy chuỗi):</p><div class="code">Bạn là giáo sư sư phạm. Hãy giải thích Blockchain cho
+sinh viên năm nhất theo 3 bước: (1) bắt đầu bằng một ẩn
+dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
+(3) kết thúc bằng một bài tập tình huống có đáp án.</div>
       <span class="subhead">Sản phẩm — ảnh kết quả AI</span>
       <div class="gallery">
-        <div class="shot-empty"><div><span>＋</span>Kết quả prompt ban đầu</div></div>
-        <div class="shot-empty"><div><span>＋</span>Kết quả prompt cải tiến</div></div>
+        <div class="shot-empty"><div><span>＋</span>Kết quả prompt cơ bản</div></div>
+        <div class="shot-empty"><div><span>＋</span>Kết quả prompt nâng cao</div></div>
       </div>
-      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Vì sao prompt cải tiến cho kết quả tốt hơn — nó định hướng mô hình thế nào.]</p></div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>Prompt nâng cao cho kết quả tốt hơn vì nó định hướng mô hình bằng <strong>vai trò</strong> (chọn giọng điệu, độ sâu), <strong>bối cảnh</strong> (chọn đúng đối tượng), <strong>ràng buộc</strong> (kiểm soát độ dài, định dạng) và <strong>tư duy chuỗi</strong> (ép mô hình lập luận theo bước). Prompt Engineering thực chất là một phương pháp luận để tối ưu hoá khả năng của AI.</p></div>
+      <button class="detail-btn" data-modal="m3" type="button">Xem báo cáo chi tiết →</button>
     </div>
   </article>
 
   <article class="panel hud project">
-    <div class="num">04</div><div class="head"><span class="src">Bài 4 · Mục 4.4</span><h3>Công cụ hợp tác trực tuyến cho dự án nhóm</h3></div>
+    <div class="num">04</div><div class="head"><span class="src">Bài 4 · Giao tiếp &amp; hợp tác số</span><h3>Công cụ hợp tác trực tuyến cho dự án nhóm</h3></div>
     <div class="body">
-      <span class="subhead">Mục tiêu</span><p>[Dùng công cụ quản lý dự án để lập kế hoạch và phối hợp nhóm.]</p>
-      <span class="subhead">Quá trình</span><p>[Nhóm dùng công cụ gì (Trello/Workspace/Teams...), phân công &amp; theo dõi tiến độ ra sao.]</p>
+      <span class="subhead">Mục tiêu</span><p>Dùng bộ công cụ cộng tác trực tuyến để lập kế hoạch, phân công và phối hợp nhóm minh bạch theo thời gian thực cho một dự án workshop kỹ năng học tập. Vai trò của mình: <strong>phụ trách nội dung</strong>.</p>
+      <span class="subhead">Quá trình</span><p>Nhóm dùng 4 công cụ tạo thành một hệ thống kín: <strong>Trello</strong> (bảng Kanban 5 cột), <strong>Google Docs</strong> (Version History), <strong>Google Drive</strong> (lưu trữ có cấu trúc) và <strong>Microsoft Teams</strong> (liên lạc, chốt quyết định).</p>
       <span class="subhead">Sản phẩm — ảnh minh chứng</span>
       <div class="gallery">
-        <div class="shot-empty"><div><span>＋</span>Bảng công việc</div></div>
-        <div class="shot-empty"><div><span>＋</span>Phân công thành viên</div></div>
-        <div class="shot-empty"><div><span>＋</span>Tiến độ / bình luận</div></div>
+        <div class="shot-empty"><div><span>＋</span>Bảng Kanban Trello</div></div>
+        <div class="shot-empty"><div><span>＋</span>Version History trong Docs</div></div>
+        <div class="shot-empty"><div><span>＋</span>Thư mục Drive / Teams</div></div>
       </div>
-      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Công cụ tối ưu quy trình nhóm thế nào? Tính năng nào hữu ích nhất?]</p></div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>Trello cho cả nhóm thấy tiến độ mà không cần họp báo cáo; Version History ghi rõ ai đóng góp gì; Drive và Teams đồng bộ tài liệu tức thì. Bài học lớn nhất: công cụ chỉ là phương tiện — <strong>kỷ luật sử dụng</strong> và tinh thần trách nhiệm mới là yếu tố quyết định thành công.</p></div>
+      <button class="detail-btn" data-modal="m4" type="button">Xem báo cáo chi tiết →</button>
     </div>
   </article>
 
   <article class="panel hud project">
-    <div class="num">05</div><div class="head"><span class="src">Bài 5 · Mục 5.4</span><h3>Dùng AI tạo sinh hỗ trợ sáng tạo nội dung</h3></div>
+    <div class="num">05</div><div class="head"><span class="src">Bài 5 · Sáng tạo nội dung số</span><h3>Dùng AI tạo sinh hỗ trợ sáng tạo nội dung</h3></div>
     <div class="body">
-      <span class="subhead">Mục tiêu</span><p>[Tạo một sản phẩm số (ảnh / video / bài viết) có AI hỗ trợ.]</p>
-      <span class="subhead">Quá trình</span><p>[Mô tả các bước sản xuất và công cụ AI đã dùng.]</p>
+      <span class="subhead">Mục tiêu</span><p>Đóng vai đạo diễn sáng tạo, dùng AI tạo sinh để sản xuất một infographic hoàn chỉnh — <strong>"Bí kíp Master thời gian: Học hết mình, chơi nhiệt tình"</strong> — dành cho sinh viên.</p>
+      <span class="subhead">Quá trình</span><p>Quy trình 3 giai đoạn với 3 công cụ AI khác nhau: <strong>Google Gemini</strong> (dàn ý &amp; nội dung) → <strong>DALL-E 3 qua Copilot</strong> (minh hoạ 3D Pixar) → <strong>Canva Magic Write</strong> (biên tập &amp; dàn trang). Tỷ lệ ~40% AI hỗ trợ, 60% công việc cá nhân.</p>
       <span class="subhead">Sản phẩm</span>
       <div class="gallery-art">
-        <div class="shot-empty span-2 row-2"><div><span>＋</span>Sản phẩm chính<br>images/san-pham.png</div></div>
-        <div class="shot-empty"><div><span>＋</span>Bản nháp 1</div></div>
-        <div class="shot-empty"><div><span>＋</span>Bản nháp 2</div></div>
-        <div class="shot-empty span-2"><div><span>＋</span>So sánh trước / sau</div></div>
+        <div class="shot-empty span-2 row-2"><div><span>＋</span>Infographic hoàn chỉnh<br>images/san-pham.png</div></div>
+        <div class="shot-empty"><div><span>＋</span>Bản nháp Gemini</div></div>
+        <div class="shot-empty"><div><span>＋</span>Ảnh thô DALL-E 3</div></div>
+        <div class="shot-empty span-2"><div><span>＋</span>So sánh trước / sau Canva</div></div>
       </div>
-      <!-- 👉 Video YouTube: thay VIDEO_ID, bỏ comment khối dưới -->
-      <!-- <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video" allowfullscreen></iframe></div> -->
-      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Em tận dụng AI ở khâu nào? Đâu là phần em tự làm, đâu là phần AI hỗ trợ?]</p></div>
+      <p style="font-family:var(--mono);font-size:.82rem;margin-top:6px">🔗 Xem sản phẩm: <a href="https://canva.link/65wlqa43k0lnfr6" target="_blank" rel="noopener" style="color:var(--c-green)">canva.link/65wlqa43k0lnfr6</a></p>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>AI giúp mình vượt qua "nỗi sợ trang trắng" và rào cản kỹ năng vẽ. Nhưng phần con người — gu thẩm mỹ, đánh giá logic và kỹ năng viết prompt — mới quyết định giá trị cuối cùng. Mình tự làm 60%: viết lại nội dung sát thực tế, chốt bố cục, kiểm soát thiên kiến của AI.</p></div>
+      <button class="detail-btn" data-modal="m5" type="button">Xem báo cáo chi tiết →</button>
     </div>
   </article>
 
   <article class="panel hud project">
-    <div class="num">06</div><div class="head"><span class="src">Bài 6 · Mục 6.4</span><h3>Sử dụng AI có trách nhiệm trong học tập</h3></div>
+    <div class="num">06</div><div class="head"><span class="src">Bài 6 · An toàn &amp; liêm chính học thuật</span><h3>Sử dụng AI có trách nhiệm trong học tập</h3></div>
     <div class="body">
-      <span class="subhead">Mục tiêu</span><p>[Xây dựng bộ nguyên tắc cá nhân (5–7 điều) về dùng AI có trách nhiệm.]</p>
+      <span class="subhead">Mục tiêu</span><p>Phân tích chính sách AI của ĐHQGHN, so sánh với các mô hình giáo dục toàn cầu, và xây dựng một bộ <strong>6 nguyên tắc cá nhân</strong> cho việc sử dụng AI có trách nhiệm.</p>
       <span class="subhead">Bộ nguyên tắc của tôi</span>
       <ul>
-        <li><strong>[Nguyên tắc 1]</strong> — [lý do ngắn gọn].</li>
-        <li><strong>[Nguyên tắc 2]</strong> — [lý do].</li>
-        <li><strong>[Nguyên tắc 3]</strong> — [lý do].</li>
-        <li><strong>[Nguyên tắc 4]</strong> — [lý do].</li>
-        <li><strong>[Nguyên tắc 5]</strong> — [lý do].</li>
+        <li><strong>Hoài nghi có hệ thống (Zero Trust AI)</strong> — không tin mù quáng vào dữ liệu AI, luôn kiểm chứng độc lập qua nguồn học thuật.</li>
+        <li><strong>Chủ quyền tư duy (Human-in-command)</strong> — AI chỉ là trợ lý; lập luận và kết luận cuối cùng phải là của mình.</li>
+        <li><strong>Minh bạch tuyệt đối</strong> — khai báo rõ tên công cụ, mục đích và mức độ can thiệp của AI.</li>
+        <li><strong>Bảo vệ chủ quyền dữ liệu</strong> — không đăng thông tin cá nhân, mã nguồn mật lên nền tảng AI công cộng.</li>
+        <li><strong>Ứng xử văn minh số</strong> — không dùng AI để tạo hoặc lan truyền tin giả, nội dung độc hại.</li>
+        <li><strong>Cân bằng an sinh số</strong> — áp dụng quy tắc 20-20-20, "cai nghiện số" định kỳ.</li>
       </ul>
-      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Phân tích các vấn đề đạo đức của AI — thiên kiến, quyền riêng tư, tin sai, liêm chính học thuật — và đề xuất giải pháp.]</p></div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>Chép nguyên văn từ AI vừa vi phạm trung thực, vừa gián tiếp xâm phạm bản quyền của hàng triệu tác giả vô danh trong tập huấn luyện, và gây <strong>suy thoái nhận thức</strong> về lâu dài. Giải pháp: kiểm chứng chéo, viết lại bằng ngôn ngữ của mình, và khai báo minh bạch.</p></div>
+      <button class="detail-btn" data-modal="m6" type="button">Xem báo cáo chi tiết →</button>
     </div>
   </article>
 
 </div>
 
+<!-- ============================================================
+     CÁC CỬA SỔ "XEM BÁO CÁO CHI TIẾT" (MODAL)
+     👉 Trong mỗi modal, thay href="#" của nút "Tải bản PDF gốc"
+        bằng link Google Drive tới bản PDF báo cáo của em.
+     ============================================================ -->
+
+<div class="modal-overlay" id="m1">
+  <div class="modal">
+    <button class="modal-close" data-close type="button" aria-label="Đóng">×</button>
+    <h2>Bài 1 — Thao tác với tệp tin &amp; thư mục</h2>
+    <div class="modal-body">
+      <h4>Mục tiêu</h4>
+      <p>Xây dựng một hệ thống quản lý tài liệu khoa học: tổ chức thư mục phân cấp theo chức năng và đặt tên nhất quán, cho phép truy xuất nhanh chóng và kiểm soát phiên bản hiệu quả trong suốt quá trình học.</p>
+
+      <h3>Cấu trúc thư mục đã thiết kế</h3>
+      <p>Mình tổ chức theo chức năng để hệ thống có thể mở rộng vô hạn mà vẫn tìm được mọi tệp trong vài giây:</p>
+      <div class="code">📁 HOC_TAP_2026/
+├── 📁 NhapMon_CongNgheSo/
+│   ├── 📁 01_TaiLieu/
+│   ├── 📁 02_BaiTap/
+│   │   ├── 20260605_NhapMonCNS_BaiTap1_v02.docx
+│   │   └── 20260612_NhapMonCNS_BaiTap2_v01.pdf
+│   ├── 📁 03_ThamKhao/
+│   └── 📁 04_SanPham/
+├── 📁 LapTrinh_C/
+└── 📁 ToanRoiRac/</div>
+
+      <h3>Quy ước đặt tên</h3>
+      <p>Mọi tệp tuân theo một khuôn mẫu thống nhất:</p>
+      <div class="code">[Ngày YYYYMMDD] _ [Môn] _ [Loại tài liệu] _ [Phiên bản]</div>
+      <ul>
+        <li><strong>Tiền tố ngày YYYYMMDD</strong> — để hệ điều hành tự động sắp xếp tệp theo đúng thứ tự thời gian mà không cần can thiệp.</li>
+        <li><strong>Hậu tố phiên bản</strong> (v01, v02, final) — giải quyết triệt để vấn đề "bản cuối cùng thật", "bản sửa lần chót"…</li>
+        <li><strong>Tổ chức theo chức năng</strong> — tách rõ Tài liệu / Bài tập / Tham khảo / Sản phẩm để mở rộng dễ dàng.</li>
+      </ul>
+
+      <h3>Các thao tác đã thực hành</h3>
+      <p>Trên File Explorer, mình thực hành đầy đủ vòng đời của một tệp: tạo mới, sao chép (Copy), di chuyển (Cut), đổi tên (Rename), xoá vào Thùng rác, xoá vĩnh viễn (Shift+Delete) và khôi phục tệp từ Thùng rác về vị trí cũ.</p>
+
+      <h3>Phản tư</h3>
+      <p>Đây là kỹ năng nền tảng tưởng đơn giản nhưng cực kỳ quan trọng với người làm Khoa học Máy tính — khi phải quản lý hàng trăm tệp mã nguồn và tài liệu, một hệ thống đặt tên kỷ luật là khác biệt giữa việc tìm thấy tệp trong 3 giây và mất cả buổi lục tung máy.</p>
+
+      <a class="pdf-btn" href="#" target="_blank" rel="noopener">📄 Tải bản PDF gốc (dán link Google Drive vào đây)</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m2">
+  <div class="modal">
+    <button class="modal-close" data-close type="button" aria-label="Đóng">×</button>
+    <h2>Bài 2 — Tìm kiếm &amp; đánh giá thông tin học thuật</h2>
+    <div class="modal-body">
+      <h4>Chủ đề nghiên cứu</h4>
+      <p><strong>"Ứng dụng AI trong An ninh mạng"</strong> — một lĩnh vực giao thoa đang phát triển rất nhanh, đòi hỏi nguồn tài liệu vừa cập nhật vừa đáng tin cậy.</p>
+
+      <h3>5 loại nguồn đã khai thác</h3>
+      <ul>
+        <li><strong>Cơ sở dữ liệu học thuật</strong> — IEEE Xplore, ACM Digital Library.</li>
+        <li><strong>Tạp chí chuyên ngành</strong> — IEEE Access, các tạp chí của Elsevier.</li>
+        <li><strong>Sách chuyên khảo</strong> — O'Reilly, Packt.</li>
+        <li><strong>Blog hãng bảo mật</strong> — CrowdStrike, IBM Security.</li>
+        <li><strong>Báo cáo &amp; tiêu chuẩn</strong> — tài liệu của NIST.</li>
+      </ul>
+
+      <h3>Toán tử tìm kiếm nâng cao</h3>
+      <div class="code">"deep learning" intrusion detection filetype:pdf
+malware detection site:ieee.org
+machine learning AND ("cybersecurity" OR "network security")
+"graph neural network" intitle:survey -blog</div>
+      <p>Mỗi toán tử có vai trò lọc riêng: <code>filetype:pdf</code> ưu tiên tài liệu đầy đủ; <code>site:</code> giới hạn trong nền tảng uy tín như IEEE; <code>intitle:</code> tìm đúng các bài tổng quan; toán tử Boolean <code>AND/OR</code> kết hợp khái niệm liên quan; dấu <code>-</code> loại bỏ kết quả nhiễu.</p>
+
+      <h3>5 tiêu chí đánh giá độ tin cậy</h3>
+      <ul>
+        <li><strong>Uy tín tác giả</strong> — học hàm, cơ quan công tác.</li>
+        <li><strong>Nơi xuất bản</strong> — nhà xuất bản / hội nghị có bình duyệt.</li>
+        <li><strong>Phương pháp nghiên cứu</strong> — bộ dữ liệu, chỉ số đánh giá rõ ràng.</li>
+        <li><strong>Số trích dẫn</strong> — tham khảo qua Google Scholar.</li>
+        <li><strong>Tính cập nhật</strong> — ưu tiên tài liệu trong 5 năm gần nhất.</li>
+      </ul>
+
+      <h3>Bảng đánh giá 12 nguồn</h3>
+      <div class="modal-table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Loại nguồn</th><th>Nhận xét</th><th>Độ tin cậy</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Bài báo IEEE</td><td>Bình duyệt, phương pháp rõ, dữ liệu công khai</td><td>Rất cao</td></tr>
+            <tr><td>2</td><td>Bài báo IEEE Access</td><td>Bình duyệt, nhiều trích dẫn</td><td>Rất cao</td></tr>
+            <tr><td>3</td><td>Bài hội nghị ACM</td><td>Bình duyệt, cập nhật</td><td>Rất cao</td></tr>
+            <tr><td>4</td><td>Bài báo Elsevier</td><td>Bình duyệt, chuyên sâu</td><td>Cao</td></tr>
+            <tr><td>5</td><td>Bài tổng quan (survey)</td><td>Tổng hợp tốt, định hướng nghiên cứu</td><td>Cao</td></tr>
+            <tr><td>6</td><td>Bài báo bình duyệt khác</td><td>Phương pháp chắc chắn</td><td>Cao</td></tr>
+            <tr><td>7</td><td>Sách O'Reilly</td><td>Kiến thức nền tốt, hơi tổng quát</td><td>Khá</td></tr>
+            <tr><td>8</td><td>Sách Packt</td><td>Thực hành tốt, ít chiều sâu lý thuyết</td><td>Khá</td></tr>
+            <tr><td>9</td><td>Tài liệu NIST</td><td>Tiêu chuẩn chính thống</td><td>Cao</td></tr>
+            <tr><td>10</td><td>Blog CrowdStrike</td><td>Cập nhật thực tế, có tính thương mại</td><td>Trung bình</td></tr>
+            <tr><td>11</td><td>Blog IBM Security</td><td>Thông tin tốt, cần đối chiếu</td><td>Trung bình</td></tr>
+            <tr><td>12</td><td>Báo cáo kỹ thuật hãng</td><td>Số liệu hữu ích, cần kiểm chứng</td><td>Trung bình</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Kết luận</h3>
+      <p>Kết hợp nhiều loại nguồn cho cái nhìn toàn diện về chủ đề: bài báo bình duyệt cung cấp chiều sâu lý thuyết, blog hãng bảo mật bổ sung góc nhìn thực tế. Bài tập này rèn kỹ năng cốt lõi: không tin ngay vào kết quả đầu tiên, mà luôn đánh giá độ tin cậy trước khi sử dụng.</p>
+
+      <a class="pdf-btn" href="#" target="_blank" rel="noopener">📄 Tải bản PDF gốc (dán link Google Drive vào đây)</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m3">
+  <div class="modal">
+    <button class="modal-close" data-close type="button" aria-label="Đóng">×</button>
+    <h2>Bài 3 — Viết Prompt hiệu quả</h2>
+    <div class="modal-body">
+      <h4>Mục tiêu</h4>
+      <p>So sánh hiệu quả của prompt qua 3 cấp độ (Cơ bản → Cải tiến → Nâng cao) trên 3 tác vụ học tập, từ đó rút ra mô hình viết prompt 4C.</p>
+
+      <h3>Tác vụ 1 — Tóm tắt một bài luận</h3>
+      <div class="modal-table-wrap">
+        <table>
+          <thead><tr><th>Cấp độ</th><th>Cách làm &amp; kết quả</th></tr></thead>
+          <tbody>
+            <tr><td>Cơ bản</td><td>"Tóm tắt bài này" → bỏ sót thông điệp chính cho phụ huynh.</td></tr>
+            <tr><td>Cải tiến</td><td>Thêm yêu cầu gạch đầu dòng → có cấu trúc nhưng còn máy móc.</td></tr>
+            <tr><td>Nâng cao</td><td>Gán vai chuyên gia, giới hạn số chữ, tập trung vào tác động thực tế → súc tích, đúng trọng tâm.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Tác vụ 2 — Giải thích Blockchain</h3>
+      <p><strong>Prompt cơ bản:</strong></p>
+      <div class="code">Blockchain là gì? Giải thích giúp tôi.</div>
+      <p><strong>Prompt nâng cao:</strong></p>
+      <div class="code">Bạn là giáo sư sư phạm. Hãy giải thích Blockchain cho
+sinh viên năm nhất theo 3 bước:
+(1) bắt đầu bằng một ẩn dụ quen thuộc (cuốn sổ cái chung),
+(2) liên kết với 3 đặc điểm cốt lõi,
+(3) kết thúc bằng một bài tập tình huống có đáp án.</div>
+
+      <h3>Tác vụ 3 — Tạo câu hỏi ôn tập Java OOP</h3>
+      <p>Prompt nâng cao yêu cầu AI tạo bộ câu hỏi theo nhiều mức độ (nhận biết → vận dụng), kèm đáp án và giải thích ngắn, ở định dạng bảng để dễ ôn.</p>
+
+      <h3>Mô hình 4C của tôi</h3>
+      <ul>
+        <li><strong>Context (Bối cảnh)</strong> — cho AI biết vai trò và đối tượng (sinh viên năm nhất).</li>
+        <li><strong>Constraint (Ràng buộc)</strong> — giới hạn độ dài, định dạng, phong cách.</li>
+        <li><strong>Clarity in Structure (Cấu trúc rõ ràng)</strong> — chia yêu cầu thành các bước/mục.</li>
+        <li><strong>Chain-of-Thought (Tư duy chuỗi)</strong> — ép mô hình lập luận theo từng bước.</li>
+      </ul>
+
+      <h3>Kết luận</h3>
+      <p>Prompt nâng cao cho kết quả tốt hơn hẳn vì nó định hướng mô hình thay vì để mô hình tự đoán ý. Prompt Engineering không phải mẹo vặt, mà là một phương pháp luận để tối ưu hoá khả năng học tập cùng AI.</p>
+
+      <a class="pdf-btn" href="#" target="_blank" rel="noopener">📄 Tải bản PDF gốc (dán link Google Drive vào đây)</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m4">
+  <div class="modal">
+    <button class="modal-close" data-close type="button" aria-label="Đóng">×</button>
+    <h2>Bài 4 — Công cụ hợp tác trực tuyến</h2>
+    <div class="modal-body">
+      <h4>Bối cảnh</h4>
+      <p>Một dự án nhóm tổ chức workshop về kỹ năng học tập. Vai trò của mình là <strong>phụ trách nội dung</strong> — soạn thảo, biên tập và đảm bảo tài liệu nhất quán.</p>
+
+      <h3>Bộ công cụ — một hệ thống kín</h3>
+      <ul>
+        <li><strong>Trello</strong> — bảng Kanban 5 cột theo quy trình (Ý tưởng → Đang làm → Review → Chờ duyệt → Hoàn thành). Mọi người thấy tiến độ mà không cần họp báo cáo.</li>
+        <li><strong>Google Docs</strong> — soạn thảo đồng thời và dùng Version History để ghi rõ ai đóng góp gì, khôi phục được mọi phiên bản.</li>
+        <li><strong>Google Drive</strong> — lưu trữ tập trung dưới thư mục "Workshop 2026" với cấu trúc rõ ràng và quy tắc đặt tên.</li>
+        <li><strong>Microsoft Teams</strong> — kênh liên lạc, chốt quyết định và cập nhật tiến độ.</li>
+      </ul>
+
+      <h3>3 thách thức &amp; cách giải quyết</h3>
+      <ul>
+        <li><strong>Khó với tính năng tự động hoá trên Trello</strong> → tự học qua video và hỏi người có kinh nghiệm.</li>
+        <li><strong>Nhiều người sửa Docs cùng lúc gây trùng lặp</strong> → thống nhất quy tắc trên Teams trước, dùng chế độ "Đề xuất" (Suggesting) để rà soát.</li>
+        <li><strong>Vấn đề tâm lý: ngại chia sẻ ý kiến vì sợ bị phản đối</strong> → nhờ sự khích lệ của cả nhóm, từ ngày thứ ba thành viên đó đã chủ động đóng góp nhiều hơn.</li>
+      </ul>
+
+      <h3>Bài học</h3>
+      <p>Công cụ chỉ là phương tiện. Trello, Docs hay Teams đều mạnh, nhưng <strong>kỷ luật sử dụng</strong> và tinh thần trách nhiệm của từng thành viên mới là yếu tố quyết định một dự án nhóm thành công.</p>
+
+      <a class="pdf-btn" href="#" target="_blank" rel="noopener">📄 Tải bản PDF gốc (dán link Google Drive vào đây)</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m5">
+  <div class="modal">
+    <button class="modal-close" data-close type="button" aria-label="Đóng">×</button>
+    <h2>Bài 5 — Dùng AI tạo sinh sáng tạo nội dung</h2>
+    <div class="modal-body">
+      <h4>Sản phẩm</h4>
+      <p>Một infographic dọc (1080×1920px) tựa đề <strong>"Bí kíp Master thời gian: Học hết mình, chơi nhiệt tình"</strong>, dành cho sinh viên. Tỷ lệ ~40% AI hỗ trợ và 60% công việc cá nhân.</p>
+
+      <h3>Giai đoạn 1 — Nội dung (Google Gemini)</h3>
+      <p>Mình yêu cầu Gemini đóng vai chuyên gia tâm lý học đường, lập dàn ý 3 bước (mỗi bước không quá 40 chữ, giọng Gen Z lịch sự). Gemini gợi ý kết hợp Ma trận Eisenhower với kỹ thuật Pomodoro. Sau đó mình <strong>viết lại 60% nội dung</strong> cho sát thực tế: thêm ví dụ cụ thể (ôn thi = làm ngay, dọn KTX = xếp lịch sau), bổ sung app chặn mạng (Forest, Cold Turkey), và thay từ lóng bằng từ chuẩn mực.</p>
+
+      <h3>Giai đoạn 2 — Hình ảnh (DALL-E 3 qua Copilot)</h3>
+      <p>Mình muốn góc nhìn drone từ trên cao, hai học sinh thư thái trên thảm cỏ, phong cách 3D Pixar. Qua nhiều lần thử, mình tinh chỉnh prompt: khoá tỷ lệ khung dọc, chốt phong cách Pixar, tạo 3 bảng trắng dọc lớn để có chỗ viết chữ, và thêm một <strong>lệnh phòng thủ</strong> để ngăn AI tự điền chữ:</p>
+      <div class="code">... ABSOLUTELY NO text, NO letters, NO words on the image.</div>
+
+      <h3>Giai đoạn 3 — Hoàn thiện (Canva Magic Write)</h3>
+      <p>Mình dàn trang trên Canva, dùng Magic Write để tối ưu ngôn ngữ, rồi thêm các yếu tố sáng tạo: font Lexend Deca, hiệu ứng uốn cong cho tiêu đề, sticker trang trí.</p>
+
+      <h3>So sánh 3 công cụ AI</h3>
+      <div class="modal-table-wrap">
+        <table>
+          <thead><tr><th>Công cụ</th><th>Vai trò</th><th>Điểm mạnh</th></tr></thead>
+          <tbody>
+            <tr><td>Gemini</td><td>Sinh nội dung, dàn ý</td><td>Gợi ý nhanh, có cấu trúc</td></tr>
+            <tr><td>DALL-E 3 (Copilot)</td><td>Tạo hình minh hoạ</td><td>Phong cách 3D đẹp, theo prompt</td></tr>
+            <tr><td>Canva Magic Write</td><td>Biên tập &amp; dàn trang</td><td>Tối ưu chữ, công cụ thiết kế</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Đạo đức &amp; thiên kiến</h3>
+      <p>AI tạo hình thường mặc định một giới tính, nên mình chủ động yêu cầu "một bạn nam và một bạn nữ" để đảm bảo công bằng. Mình cũng minh bạch về vai trò của AI trong sản phẩm.</p>
+
+      <h3>Phản tư</h3>
+      <p>AI là công cụ gỡ bỏ rào cản kỹ thuật, nhưng phán đoán của con người — gu thẩm mỹ, đánh giá logic và kỹ năng viết prompt — mới quyết định giá trị thực của tác phẩm.</p>
+
+      <p style="font-family:var(--mono);font-size:.85rem">🔗 Sản phẩm: <a href="https://canva.link/65wlqa43k0lnfr6" target="_blank" rel="noopener" style="color:var(--c-green)">canva.link/65wlqa43k0lnfr6</a></p>
+
+      <a class="pdf-btn" href="#" target="_blank" rel="noopener">📄 Tải bản PDF gốc (dán link Google Drive vào đây)</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m6">
+  <div class="modal">
+    <button class="modal-close" data-close type="button" aria-label="Đóng">×</button>
+    <h2>Bài 6 — Sử dụng AI có trách nhiệm</h2>
+    <div class="modal-body">
+      <h4>Phân tích chính sách</h4>
+      <p>Mình phân tích chính sách AI của <strong>ĐHQGHN (VNU)</strong> và so sánh với 3 mô hình giáo dục toàn cầu — từ cấm tuyệt đối, đến cho phép tự do, đến <strong>thích ứng có kiểm soát</strong> (Harvard, Yale, Stanford, MIT yêu cầu sinh viên ghi nhận sự cộng tác của AI và trích dẫn prompt). VNU/UET đang đi theo hướng thứ ba này.</p>
+
+      <h3>Bài tập thực hành — và bài học bất ngờ</h3>
+      <p>Khi làm một literature review về ứng dụng học máy cho tối ưu mạng và phát hiện mã độc, mình phát hiện AI mắc lỗi nghiêm trọng khi kiểm chứng chéo: nó <strong>gán sai nhà xuất bản / nền tảng của các bài báo</strong> (ví dụ gán một bài về phát hiện mã độc cho ResearchGate trong khi thực ra là của IEEE). Ngoài ra, gợi ý của AI thiếu chiều sâu kỹ thuật — liệt kê CNN, GNN, Transformer khá tốt nhưng bỏ qua các thách thức triển khai thực tế như chi phí phần cứng và độ trễ trên thiết bị biên.</p>
+      <p>Cách khắc phục: gỡ bỏ các link trung gian, lấy bài gốc trực tiếp từ IEEE Xplore, ScienceDirect, SpringerLink, rồi tự viết lại toàn bộ phân tích với nền tảng kỹ thuật vững.</p>
+
+      <h3>Bộ 6 nguyên tắc cá nhân</h3>
+      <ul>
+        <li><strong>1. Hoài nghi có hệ thống (Zero Trust AI)</strong> — không tin mù quáng, luôn kiểm chứng độc lập qua nguồn chính thống để tránh "ảo giác" của AI.</li>
+        <li><strong>2. Chủ quyền tư duy (Human-in-command)</strong> — chỉ dùng AI như trợ lý tư vấn ý tưởng; lập luận và kết luận cuối phải là của mình.</li>
+        <li><strong>3. Minh bạch tuyệt đối</strong> — khai báo rõ tên công cụ, mục đích, mức độ can thiệp của AI trong mọi sản phẩm.</li>
+        <li><strong>4. Bảo vệ chủ quyền dữ liệu</strong> — không đăng thông tin cá nhân, mã nguồn mật hay tài liệu chưa công bố lên nền tảng AI công cộng.</li>
+        <li><strong>5. Ứng xử văn minh số</strong> — không dùng AI để tạo hoặc lan truyền tin giả, nội dung độc hại.</li>
+        <li><strong>6. Cân bằng an sinh số</strong> — áp dụng quy tắc 20-20-20 để bảo vệ mắt và "cai nghiện số" định kỳ.</li>
+      </ul>
+
+      <h3>Đạo đức &amp; liêm chính học thuật</h3>
+      <p>Dựa trên 6 giá trị liêm chính của ICAI (Trung thực, Tin cậy, Công bằng, Tôn trọng, Trách nhiệm, Dũng cảm), mình nhận ra: chép nguyên văn từ AI vừa là đạo văn gián tiếp với hàng triệu tác giả vô danh trong tập huấn luyện, vừa gây <strong>suy thoái nhận thức (cognitive atrophy)</strong> về lâu dài.</p>
+
+      <h3>Tuyên bố minh bạch (mẫu)</h3>
+      <p>Mình kết thúc mỗi bài viết bằng một lời khai báo rõ ràng về cách dùng AI — giới hạn ở việc gợi ý ý tưởng và tìm từ khoá, chứ không sinh ra lập luận cốt lõi. Thông điệp cốt lõi: <strong>AI là công cụ, không phải vật thay thế cho tư duy.</strong></p>
+
+      <a class="pdf-btn" href="#" target="_blank" rel="noopener">📄 Tải bản PDF gốc (dán link Google Drive vào đây)</a>
+    </div>
+  </div>
+</div>
+
 <footer class="foot">
   <div class="wrap">
-    <span>© 2026 · [Tên của em]</span>
+    <span>© 2026 · Đinh Gia Phong</span>
     <span><a href="conclusion.html">Đọc phần Tổng kết →</a></span>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var body = document.body;
+    function openModal(id) {
+      var m = document.getElementById(id);
+      if (!m) return;
+      m.classList.add('open');
+      body.classList.add('modal-open');
+    }
+    function closeAll() {
+      var open = document.querySelectorAll('.modal-overlay.open');
+      for (var i = 0; i < open.length; i++) open[i].classList.remove('open');
+      body.classList.remove('modal-open');
+    }
+    // Mở modal khi bấm nút "Xem báo cáo chi tiết"
+    var btns = document.querySelectorAll('[data-modal]');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function () {
+        openModal(this.getAttribute('data-modal'));
+      });
+    }
+    // Đóng khi bấm nút ×
+    var closes = document.querySelectorAll('[data-close]');
+    for (var j = 0; j < closes.length; j++) {
+      closes[j].addEventListener('click', closeAll);
+    }
+    // Đóng khi bấm ra nền tối
+    var overlays = document.querySelectorAll('.modal-overlay');
+    for (var k = 0; k < overlays.length; k++) {
+      overlays[k].addEventListener('click', function (e) {
+        if (e.target === this) closeAll();
+      });
+    }
+    // Đóng bằng phím Esc
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeAll();
+    });
+  })();
+</script>
 
 </body>
 </html>
