@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 👉 THAY [Tên của em] (hiện ở tiêu đề tab) -->
-  <title>Portfolio — [Tên của em]</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 👉 THAY [Tên của em] (hiện ở tiêu đề tab) -->
+<title>Portfolio — Đinh Gia Phong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== ĐIỀU HƯỚNG (giống nhau trên cả 3 trang) ===== -->
-  <header class="topbar">
-    <nav class="nav">
-      <!-- 👉 THAY tên trong logo -->
-      <a class="brand" href="index.html"><span class="dot"></span>[Tên]<span>.dev</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="is-active">Giới thiệu</a></li>
-        <li><a href="projects.html">Dự án</a></li>
-        <li><a href="conclusion.html">Tổng kết</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- nền vũ trụ (giống nhau ở cả 3 trang) -->
+<div class="grid" aria-hidden="true"></div>
+<div class="cosmos" aria-hidden="true">
+  <svg class="planet p1" viewBox="0 0 120 120"><defs><radialGradient id="g1" cx="38%" cy="30%"><stop offset="0%" stop-color="#D7F7E6"/><stop offset="100%" stop-color="#74D6A4"/></radialGradient></defs><ellipse cx="60" cy="64" rx="56" ry="15" fill="none" stroke="#1B9D67" stroke-width="3" opacity=".55"/><circle cx="60" cy="58" r="34" fill="url(#g1)"/><circle cx="48" cy="50" r="5" fill="#fff" opacity=".55"/></svg>
+  <svg class="planet p2" viewBox="0 0 120 120"><defs><radialGradient id="g2" cx="38%" cy="30%"><stop offset="0%" stop-color="#EAF7CF"/><stop offset="100%" stop-color="#C3DDA4"/></radialGradient></defs><circle cx="60" cy="60" r="40" fill="url(#g2)"/><circle cx="50" cy="48" r="6" fill="#fff" opacity=".55"/></svg>
+  <svg class="planet p3" viewBox="0 0 120 120"><defs><radialGradient id="g3" cx="38%" cy="30%"><stop offset="0%" stop-color="#CFE9FB"/><stop offset="100%" stop-color="#A9DAF4"/></radialGradient></defs><ellipse cx="60" cy="62" rx="52" ry="13" fill="none" stroke="#F0D38A" stroke-width="3" opacity=".7"/><circle cx="60" cy="58" r="32" fill="url(#g3)"/></svg>
+  <svg class="planet p4" viewBox="0 0 120 120"><defs><radialGradient id="g4" cx="38%" cy="30%"><stop offset="0%" stop-color="#CFF3E2"/><stop offset="100%" stop-color="#74D6A4"/></radialGradient></defs><circle cx="60" cy="60" r="38" fill="url(#g4)"/></svg>
+  <svg class="planet p5" viewBox="0 0 120 120"><defs><radialGradient id="g5" cx="38%" cy="30%"><stop offset="0%" stop-color="#FFE3CE"/><stop offset="100%" stop-color="#FCC6A4"/></radialGradient></defs><ellipse cx="60" cy="62" rx="50" ry="12" fill="none" stroke="#74D6A4" stroke-width="3" opacity=".6"/><circle cx="60" cy="58" r="30" fill="url(#g5)"/></svg>
+  <svg class="planet p6" viewBox="0 0 120 120"><defs><radialGradient id="g6" cx="38%" cy="30%"><stop offset="0%" stop-color="#F7D9E8"/><stop offset="100%" stop-color="#F8C2D8"/></radialGradient></defs><circle cx="60" cy="60" r="36" fill="url(#g6)"/></svg>
+  <i class="meteor m1"></i><i class="meteor m2"></i><i class="meteor m3"></i><i class="meteor m4"></i><i class="meteor m5"></i>
+  <svg class="spark s1" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#1B9D67"/></svg>
+  <svg class="spark s2" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#F0D38A"/></svg>
+  <svg class="spark s3" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#74D6A4"/></svg>
+  <svg class="spark s4" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#A9DAF4"/></svg>
+</div>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="wrap">
-      <span class="kicker rise d1">Digital Portfolio · 2026</span>
-      <!-- 👉 THAY tên. Chữ trong .accent sẽ phát sáng màu xanh -->
-      <h1 class="rise d2">[Họ và tên]<br /><span class="accent">Khoa học Máy tính</span></h1>
-      <p class="lede rise d3">
-        <!-- 👉 1–2 câu giới thiệu ấn tượng. VD: "Nơi mình tập hợp các kỹ năng số và AI
-             đã học — từ quản lý dữ liệu, viết prompt, đến dùng AI có trách nhiệm." -->
-        [Một hoặc hai câu giới thiệu ngắn gọn và ấn tượng về bản thân em.]
-      </p>
-      <div class="hero-cta rise d4">
+<header class="topbar">
+  <nav class="nav">
+    <!-- 👉 THAY tên trong logo -->
+    <a class="brand" href="index.html"><span class="dot"></span>Phong<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="is-active">Giới thiệu</a></li>
+      <li><a href="projects.html">Dự án</a></li>
+      <li><a href="conclusion.html">Tổng kết</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker rise d1">Digital Portfolio · 2026</span>
+    <!-- 👉 THAY tên -->
+    <h1 class="rise d2">Đinh Gia Phong<br /><span class="accent">Khám phá vũ trụ số</span></h1>
+    <p class="lede rise d3">
+      <!-- 👉 1–2 câu giới thiệu ấn tượng về bản thân em -->
+      [Một hoặc hai câu giới thiệu ngắn gọn về bản thân — như một nhà thám hiểm đang dấn bước vào vũ trụ công nghệ &amp; AI.]
+    </p>
+    <div class="hero-row rise d4">
+      <div class="hero-cta">
         <a class="btn" href="projects.html">Khám phá dự án →</a>
         <a class="btn btn-ghost" href="conclusion.html">Tổng kết</a>
       </div>
-
-      <!-- Dải thông số trang trí (sửa số/chữ tuỳ ý, hoặc xoá nếu không thích) -->
-      <div class="stat-strip rise d4">
-        <div class="stat"><div class="n">06</div><div class="l">Nhiệm vụ</div></div>
-        <div class="stat"><div class="n">2026</div><div class="l">Năm học</div></div>
-        <div class="stat"><div class="n">AI</div><div class="l">Trọng tâm</div></div>
-        <div class="stat"><div class="n">CS</div><div class="l">Chuyên ngành</div></div>
-      </div>
+      <!-- 🧑‍🚀 Phi hành gia -->
+      <svg class="astro" viewBox="0 0 130 150" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="visor" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A2E7C2"/><stop offset="55%" stop-color="#74D6A4"/><stop offset="100%" stop-color="#A9DAF4"/></linearGradient></defs>
+        <rect x="42" y="58" width="46" height="50" rx="14" fill="#74D6A4"/>
+        <rect x="46" y="100" width="15" height="32" rx="7" fill="#FCF9F1" stroke="#233A2E" stroke-width="2.5"/>
+        <rect x="69" y="100" width="15" height="32" rx="7" fill="#FCF9F1" stroke="#233A2E" stroke-width="2.5"/>
+        <rect x="44" y="126" width="19" height="11" rx="5" fill="#A2E7C2" stroke="#233A2E" stroke-width="2"/>
+        <rect x="67" y="126" width="19" height="11" rx="5" fill="#A2E7C2" stroke="#233A2E" stroke-width="2"/>
+        <rect x="40" y="60" width="50" height="52" rx="18" fill="#FCF9F1" stroke="#233A2E" stroke-width="2.5"/>
+        <rect x="24" y="64" width="17" height="36" rx="8" fill="#FCF9F1" stroke="#233A2E" stroke-width="2.5"/>
+        <rect x="89" y="64" width="17" height="36" rx="8" fill="#FCF9F1" stroke="#233A2E" stroke-width="2.5"/>
+        <rect x="52" y="74" width="26" height="18" rx="6" fill="#A2E7C2"/>
+        <circle cx="59" cy="83" r="2.4" fill="#F8C2D8"/><circle cx="66" cy="83" r="2.4" fill="#A9DAF4"/><circle cx="73" cy="83" r="2.4" fill="#F0D38A"/>
+        <circle cx="65" cy="42" r="28" fill="#FCF9F1" stroke="#233A2E" stroke-width="2.5"/>
+        <circle cx="65" cy="42" r="19" fill="url(#visor)"/>
+        <path d="M54 34 q9 -7 20 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85"/>
+        <circle cx="59" cy="46" r="2" fill="#fff" opacity=".7"/>
+        <path d="M108 30 l2 7 7 2 -7 2 -2 7 -2 -7 -7 -2 7 -2 z" fill="#1B9D67"/>
+      </svg>
     </div>
-  </section>
-
-  <!-- ===== VỀ TÔI ===== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="panel hud">
-        <span class="kicker">Về tôi</span>
-        <h2>Đôi nét giới thiệu</h2>
-        <!-- 👉 THAY: họ tên, ngành, trường, sở thích -->
-        <p>
-          Mình là <strong>[họ tên]</strong>, sinh viên ngành <strong>Khoa học Máy tính</strong>
-          tại <strong>[tên trường]</strong>. [Viết thêm về sở thích và lĩnh vực công nghệ em quan tâm
-          — lập trình, AI, dữ liệu, an ninh mạng...]
-        </p>
-      </div>
+    <div class="stat-strip rise d4">
+      <div class="stat"><div class="n">06</div><div class="l">Hành trình</div></div>
+      <div class="stat"><div class="n">2026</div><div class="l">Năm học</div></div>
+      <div class="stat"><div class="n">AI</div><div class="l">Trọng tâm</div></div>
+      <div class="stat"><div class="n">CS</div><div class="l">Chuyên ngành</div></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== MỤC TIÊU HỌC TẬP ===== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="panel hud">
-        <span class="kicker">Định hướng</span>
-        <h2>Mục tiêu học tập &amp; phát triển</h2>
-        <!-- 👉 THAY nội dung -->
-        <p>[Mục tiêu của em trong môn Nhập môn Công nghệ số &amp; Ứng dụng AI, và định hướng
-           phát triển cá nhân — em muốn trở thành kiểu người làm nghề thế nào?]</p>
-      </div>
-    </div>
-  </section>
+<section class="section">
+  <div class="wrap"><div class="panel hud">
+    <span class="kicker">Về tôi</span><h2>Đôi nét giới thiệu</h2>
+    <!-- 👉 THAY: họ tên, ngành, trường, sở thích -->
+    <p>Mình là <strong>[họ tên]</strong>, sinh viên ngành <strong>Khoa học Máy tính</strong> tại <strong>[tên trường]</strong>. [Viết thêm về sở thích và lĩnh vực công nghệ em quan tâm — lập trình, AI, dữ liệu, an ninh mạng...]</p>
+  </div></div>
+</section>
 
-  <!-- ===== MỤC TIÊU CỦA PORTFOLIO ===== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="panel hud">
-        <span class="kicker">Mục tiêu</span>
-        <h2>Portfolio này để làm gì?</h2>
-        <ul>
-          <li>Thể hiện các kỹ năng số đã học qua từng bài tập trong môn học.</li>
-          <li>Lưu trữ sản phẩm cá nhân ở một nơi gọn gàng, dễ truy cập và chia sẻ.</li>
-          <li>[Thêm một mục tiêu của riêng em nếu muốn.]</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<section class="section">
+  <div class="wrap"><div class="panel hud">
+    <span class="kicker">Định hướng</span><h2>Mục tiêu học tập &amp; phát triển</h2>
+    <p>[Mục tiêu của em trong môn Nhập môn Công nghệ số &amp; Ứng dụng AI, và định hướng phát triển cá nhân.]</p>
+  </div></div>
+</section>
 
-  <footer class="foot">
-    <div class="wrap">
-      <span>© 2026 · [Tên của em]</span>
-      <span>Nhập môn Công nghệ số &amp; Ứng dụng AI</span>
-    </div>
-  </footer>
+<section class="section">
+  <div class="wrap"><div class="panel hud">
+    <span class="kicker">Mục tiêu</span><h2>Portfolio này để làm gì?</h2>
+    <ul>
+      <li>Thể hiện các kỹ năng số đã học qua từng bài tập trong môn học.</li>
+      <li>Lưu trữ sản phẩm cá nhân ở một nơi gọn gàng, dễ truy cập và chia sẻ.</li>
+      <li>[Thêm một mục tiêu của riêng em nếu muốn.]</li>
+    </ul>
+  </div></div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 · Đinh Gia Phong</span>
+    <span><a href="projects.html">Xem các dự án →</a></span>
+  </div>
+</footer>
 
 </body>
 </html>

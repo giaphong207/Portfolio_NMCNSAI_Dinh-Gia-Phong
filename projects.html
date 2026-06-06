@@ -1,210 +1,159 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dự án — [Tên của em]</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dự án — [Tên của em]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="topbar">
-    <nav class="nav">
-      <a class="brand" href="index.html"><span class="dot"></span>[Tên]<span>.dev</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Giới thiệu</a></li>
-        <li><a href="projects.html" class="is-active">Dự án</a></li>
-        <li><a href="conclusion.html">Tổng kết</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="grid" aria-hidden="true"></div>
+<div class="cosmos" aria-hidden="true">
+  <svg class="planet p1" viewBox="0 0 120 120"><defs><radialGradient id="g1" cx="38%" cy="30%"><stop offset="0%" stop-color="#D7F7E6"/><stop offset="100%" stop-color="#74D6A4"/></radialGradient></defs><ellipse cx="60" cy="64" rx="56" ry="15" fill="none" stroke="#1B9D67" stroke-width="3" opacity=".55"/><circle cx="60" cy="58" r="34" fill="url(#g1)"/><circle cx="48" cy="50" r="5" fill="#fff" opacity=".55"/></svg>
+  <svg class="planet p2" viewBox="0 0 120 120"><defs><radialGradient id="g2" cx="38%" cy="30%"><stop offset="0%" stop-color="#EAF7CF"/><stop offset="100%" stop-color="#C3DDA4"/></radialGradient></defs><circle cx="60" cy="60" r="40" fill="url(#g2)"/><circle cx="50" cy="48" r="6" fill="#fff" opacity=".55"/></svg>
+  <svg class="planet p3" viewBox="0 0 120 120"><defs><radialGradient id="g3" cx="38%" cy="30%"><stop offset="0%" stop-color="#CFE9FB"/><stop offset="100%" stop-color="#A9DAF4"/></radialGradient></defs><ellipse cx="60" cy="62" rx="52" ry="13" fill="none" stroke="#F0D38A" stroke-width="3" opacity=".7"/><circle cx="60" cy="58" r="32" fill="url(#g3)"/></svg>
+  <svg class="planet p4" viewBox="0 0 120 120"><defs><radialGradient id="g4" cx="38%" cy="30%"><stop offset="0%" stop-color="#CFF3E2"/><stop offset="100%" stop-color="#74D6A4"/></radialGradient></defs><circle cx="60" cy="60" r="38" fill="url(#g4)"/></svg>
+  <svg class="planet p5" viewBox="0 0 120 120"><defs><radialGradient id="g5" cx="38%" cy="30%"><stop offset="0%" stop-color="#FFE3CE"/><stop offset="100%" stop-color="#FCC6A4"/></radialGradient></defs><ellipse cx="60" cy="62" rx="50" ry="12" fill="none" stroke="#74D6A4" stroke-width="3" opacity=".6"/><circle cx="60" cy="58" r="30" fill="url(#g5)"/></svg>
+  <svg class="planet p6" viewBox="0 0 120 120"><defs><radialGradient id="g6" cx="38%" cy="30%"><stop offset="0%" stop-color="#F7D9E8"/><stop offset="100%" stop-color="#F8C2D8"/></radialGradient></defs><circle cx="60" cy="60" r="36" fill="url(#g6)"/></svg>
+  <i class="meteor m1"></i><i class="meteor m2"></i><i class="meteor m3"></i><i class="meteor m4"></i><i class="meteor m5"></i>
+  <svg class="spark s1" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#1B9D67"/></svg>
+  <svg class="spark s2" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#F0D38A"/></svg>
+  <svg class="spark s3" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#74D6A4"/></svg>
+  <svg class="spark s4" viewBox="0 0 24 24"><path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#A9DAF4"/></svg>
+</div>
 
-  <section class="page-head">
-    <div class="wrap">
-      <span class="kicker rise d1">6 nhiệm vụ</span>
-      <h1 class="rise d2">Các dự án &amp; kết quả</h1>
-      <p class="rise d3">Mỗi bài gồm ba phần — <strong>Mục tiêu · Quá trình · Sản phẩm</strong> — kèm một ghi chú phản tư về lý do và bài học.</p>
-    </div>
-  </section>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="index.html"><span class="dot"></span>[Tên]<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Giới thiệu</a></li>
+      <li><a href="projects.html" class="is-active">Dự án</a></li>
+      <li><a href="conclusion.html">Tổng kết</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- ============================================================
-       💡 CÁCH CHÈN ẢNH:
-       1) Tạo thư mục con tên  images  trong repo, bỏ ảnh chụp vào đó.
-       2) Ở mỗi ô .shot-empty bên dưới: XOÁ nó đi và DÁN khối ảnh:
-            <figure class="shot"><img src="images/ten-anh.png" alt="mô tả">
-              <figcaption>Chú thích</figcaption></figure>
-       3) Thêm bao nhiêu ảnh tuỳ ý — lưới tự sắp xếp đẹp.
-       ============================================================ -->
+<section class="page-head">
+  <div class="wrap"><span class="kicker">6 chặng hành trình</span><h1>Các dự án &amp; kết quả</h1>
+  <p>Mỗi bài gồm ba phần — <strong>Mục tiêu · Quá trình · Sản phẩm</strong> — kèm một ghi chú phản tư.</p></div>
+</section>
 
-  <div class="wrap">
+<!-- 💡 CHÈN ẢNH: tạo thư mục images/ ; thay mỗi ô .shot-empty bằng:
+     <figure class="shot"><img src="images/ten-anh.png" alt="mô tả"><figcaption>Chú thích</figcaption></figure> -->
+<div class="wrap">
 
-    <!-- ===== NHIỆM VỤ 1 — QUẢN LÝ TỆP & THƯ MỤC (gallery nghệ thuật) ===== -->
-    <article class="panel hud project rise d1">
-      <div class="num">01</div>
-      <div class="head"><span class="src">Bài 1 · Mục 1.4</span><h3>Thao tác với tệp tin &amp; thư mục</h3></div>
-      <div class="body">
-        <span class="subhead">Mục tiêu</span>
-        <p>[Tổ chức tệp/thư mục khoa học và đặt tên nhất quán.]</p>
-
-        <span class="subhead">Quá trình</span>
-        <p>[Em đã thiết kế cấu trúc thư mục ra sao, quy tắc đặt tên thế nào.]</p>
-        <div class="code">YYYYMMDD_TenMon_LoaiTaiLieu_v01.pdf
+  <article class="panel hud project">
+    <div class="num">01</div><div class="head"><span class="src">Bài 1 · Mục 1.4</span><h3>Thao tác với tệp tin &amp; thư mục</h3></div>
+    <div class="body">
+      <span class="subhead">Mục tiêu</span><p>[Tổ chức tệp/thư mục khoa học và đặt tên nhất quán.]</p>
+      <span class="subhead">Quá trình</span><p>[Em đã thiết kế cấu trúc thư mục ra sao, quy tắc đặt tên thế nào.]</p>
+      <div class="code">YYYYMMDD_TenMon_LoaiTaiLieu_v01.pdf
 20260605_NhapMonCNS_BaiTap1_v02.docx</div>
-
-        <span class="subhead">Sản phẩm — ảnh minh hoạ</span>
-        <!-- Lưới NGHỆ THUẬT: ô lớn + ô nhỏ. Thay các .shot-empty bằng <figure class="shot"> -->
-        <div class="gallery-art">
-          <div class="shot-empty span-2 row-2"><div><span>＋</span>Ảnh lớn: cây thư mục<br>images/thu-muc.png</div></div>
-          <div class="shot-empty"><div><span>＋</span>Ảnh phụ</div></div>
-          <div class="shot-empty"><div><span>＋</span>Ảnh phụ</div></div>
-          <div class="shot-empty span-2"><div><span>＋</span>Ảnh quy tắc đặt tên</div></div>
-        </div>
-
-        <div class="reflect"><span class="label">Phản tư · Vì sao</span>
-          <p>[Giải thích VÌ SAO em chọn cách tổ chức &amp; đặt tên này — giúp tìm kiếm, sắp xếp, quản lý phiên bản ra sao. Đoạn này kéo điểm lên mức cao nhất.]</p>
-        </div>
+      <span class="subhead">Sản phẩm — ảnh minh hoạ</span>
+      <div class="gallery-art">
+        <div class="shot-empty span-2 row-2"><div><span>＋</span>Ảnh lớn: cây thư mục<br>images/thu-muc.png</div></div>
+        <div class="shot-empty"><div><span>＋</span>Ảnh phụ</div></div>
+        <div class="shot-empty"><div><span>＋</span>Ảnh phụ</div></div>
+        <div class="shot-empty span-2"><div><span>＋</span>Ảnh quy tắc đặt tên</div></div>
       </div>
-    </article>
-
-    <!-- ===== NHIỆM VỤ 2 — TÌM KIẾM & ĐÁNH GIÁ THÔNG TIN ===== -->
-    <article class="panel hud project rise d2">
-      <div class="num">02</div>
-      <div class="head"><span class="src">Bài 2 · Mục 2.4</span><h3>Tìm kiếm &amp; đánh giá thông tin học thuật</h3></div>
-      <div class="body">
-        <span class="subhead">Mục tiêu</span>
-        <p>[Dùng toán tử tìm kiếm nâng cao và đánh giá độ tin cậy của nguồn.]</p>
-
-        <span class="subhead">Quá trình</span>
-        <p>[Liệt kê các truy vấn em dùng — cố gắng ≥4 toán tử khác nhau.]</p>
-        <div class="code">"học máy" site:edu.vn filetype:pdf
-machine learning intitle:survey -wikipedia</div>
-
-        <span class="subhead">Sản phẩm — ảnh kết quả tìm kiếm</span>
-        <div class="gallery">
-          <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 1</div></div>
-          <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 2</div></div>
-          <div class="shot-empty"><div><span>＋</span>Bảng đánh giá nguồn</div></div>
-        </div>
-
-        <div class="reflect"><span class="label">Phản tư · Vì sao</span>
-          <p>[Phân tích chiến lược tìm kiếm: vì sao mỗi toán tử lọc đúng nguồn hơn, và em đánh giá độ tin cậy dựa trên điều gì (VD khung CRAAP).]</p>
-        </div>
-      </div>
-    </article>
-
-    <!-- ===== NHIỆM VỤ 3 — VIẾT PROMPT HIỆU QUẢ ===== -->
-    <article class="panel hud project rise d1">
-      <div class="num">03</div>
-      <div class="head"><span class="src">Bài 3 · Mục 3.4</span><h3>Viết Prompt hiệu quả cho tác vụ học tập</h3></div>
-      <div class="body">
-        <span class="subhead">Mục tiêu</span>
-        <p>[So sánh prompt ban đầu &amp; prompt cải tiến, rút ra nguyên tắc.]</p>
-
-        <span class="subhead">Quá trình</span>
-        <p><strong>Prompt ban đầu:</strong></p>
-        <div class="code">[Dán prompt đầu tiên — thường ngắn, chung chung]</div>
-        <p><strong>Prompt cải tiến</strong> (thêm vai trò, bối cảnh, ràng buộc, định dạng):</p>
-        <div class="code">[Dán prompt đã cải tiến]</div>
-
-        <span class="subhead">Sản phẩm — ảnh kết quả AI</span>
-        <div class="gallery">
-          <div class="shot-empty"><div><span>＋</span>Kết quả prompt ban đầu</div></div>
-          <div class="shot-empty"><div><span>＋</span>Kết quả prompt cải tiến</div></div>
-        </div>
-
-        <div class="reflect"><span class="label">Phản tư · Vì sao</span>
-          <p>[Vì sao prompt cải tiến cho kết quả tốt hơn — nó định hướng mô hình thế nào.]</p>
-        </div>
-      </div>
-    </article>
-
-    <!-- ===== NHIỆM VỤ 4 — HỢP TÁC TRỰC TUYẾN ===== -->
-    <article class="panel hud project rise d2">
-      <div class="num">04</div>
-      <div class="head"><span class="src">Bài 4 · Mục 4.4</span><h3>Công cụ hợp tác trực tuyến cho dự án nhóm</h3></div>
-      <div class="body">
-        <span class="subhead">Mục tiêu</span>
-        <p>[Dùng công cụ quản lý dự án để lập kế hoạch và phối hợp nhóm.]</p>
-
-        <span class="subhead">Quá trình</span>
-        <p>[Nhóm dùng công cụ gì (Trello/Workspace/Teams...), phân công &amp; theo dõi tiến độ ra sao.]</p>
-
-        <span class="subhead">Sản phẩm — ảnh minh chứng</span>
-        <div class="gallery">
-          <div class="shot-empty"><div><span>＋</span>Bảng công việc</div></div>
-          <div class="shot-empty"><div><span>＋</span>Phân công thành viên</div></div>
-          <div class="shot-empty"><div><span>＋</span>Tiến độ / bình luận</div></div>
-        </div>
-
-        <div class="reflect"><span class="label">Phản tư · Vì sao</span>
-          <p>[Công cụ tối ưu quy trình nhóm thế nào? Tính năng nào hữu ích nhất?]</p>
-        </div>
-      </div>
-    </article>
-
-    <!-- ===== NHIỆM VỤ 5 — SÁNG TẠO NỘI DUNG VỚI AI ===== -->
-    <article class="panel hud project rise d1">
-      <div class="num">05</div>
-      <div class="head"><span class="src">Bài 5 · Mục 5.4</span><h3>Dùng AI tạo sinh hỗ trợ sáng tạo nội dung</h3></div>
-      <div class="body">
-        <span class="subhead">Mục tiêu</span>
-        <p>[Tạo một sản phẩm số (ảnh / video / bài viết) có AI hỗ trợ.]</p>
-
-        <span class="subhead">Quá trình</span>
-        <p>[Mô tả các bước sản xuất và công cụ AI đã dùng.]</p>
-
-        <span class="subhead">Sản phẩm</span>
-        <div class="gallery-art">
-          <div class="shot-empty span-2 row-2"><div><span>＋</span>Sản phẩm chính<br>images/san-pham.png</div></div>
-          <div class="shot-empty"><div><span>＋</span>Bản nháp 1</div></div>
-          <div class="shot-empty"><div><span>＋</span>Bản nháp 2</div></div>
-          <div class="shot-empty span-2"><div><span>＋</span>So sánh trước / sau</div></div>
-        </div>
-        <!-- 👉 Nếu sản phẩm là VIDEO YouTube: lấy mã sau "v=" hoặc "youtu.be/" thay vào VIDEO_ID, bỏ comment khối dưới -->
-        <!--
-        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Sản phẩm video" allowfullscreen></iframe></div>
-        -->
-
-        <div class="reflect"><span class="label">Phản tư · Vì sao</span>
-          <p>[Em tận dụng AI ở khâu nào? Đâu là phần em tự làm, đâu là phần AI hỗ trợ?]</p>
-        </div>
-      </div>
-    </article>
-
-    <!-- ===== NHIỆM VỤ 6 — AI CÓ TRÁCH NHIỆM ===== -->
-    <article class="panel hud project rise d2">
-      <div class="num">06</div>
-      <div class="head"><span class="src">Bài 6 · Mục 6.4</span><h3>Sử dụng AI có trách nhiệm trong học tập</h3></div>
-      <div class="body">
-        <span class="subhead">Mục tiêu</span>
-        <p>[Xây dựng bộ nguyên tắc cá nhân (5–7 điều) về dùng AI có trách nhiệm.]</p>
-
-        <span class="subhead">Bộ nguyên tắc của tôi</span>
-        <ul>
-          <li><strong>[Nguyên tắc 1]</strong> — [lý do ngắn gọn].</li>
-          <li><strong>[Nguyên tắc 2]</strong> — [lý do].</li>
-          <li><strong>[Nguyên tắc 3]</strong> — [lý do].</li>
-          <li><strong>[Nguyên tắc 4]</strong> — [lý do].</li>
-          <li><strong>[Nguyên tắc 5]</strong> — [lý do].</li>
-        </ul>
-
-        <div class="reflect"><span class="label">Phản tư · Vì sao</span>
-          <p>[Phân tích các vấn đề đạo đức của AI — thiên kiến, quyền riêng tư, tin sai, liêm chính học thuật — và đề xuất giải pháp cho từng thách thức.]</p>
-        </div>
-      </div>
-    </article>
-
-  </div>
-
-  <footer class="foot">
-    <div class="wrap">
-      <span>© 2026 · [Tên của em]</span>
-      <span><a href="conclusion.html">Đọc phần Tổng kết →</a></span>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Giải thích VÌ SAO em chọn cách tổ chức &amp; đặt tên này — giúp tìm kiếm, sắp xếp, quản lý phiên bản ra sao.]</p></div>
     </div>
-  </footer>
+  </article>
+
+  <article class="panel hud project">
+    <div class="num">02</div><div class="head"><span class="src">Bài 2 · Mục 2.4</span><h3>Tìm kiếm &amp; đánh giá thông tin học thuật</h3></div>
+    <div class="body">
+      <span class="subhead">Mục tiêu</span><p>[Dùng toán tử tìm kiếm nâng cao và đánh giá độ tin cậy của nguồn.]</p>
+      <span class="subhead">Quá trình</span><p>[Liệt kê các truy vấn em dùng — cố gắng ≥4 toán tử khác nhau.]</p>
+      <div class="code">"học máy" site:edu.vn filetype:pdf
+machine learning intitle:survey -wikipedia</div>
+      <span class="subhead">Sản phẩm — ảnh kết quả tìm kiếm</span>
+      <div class="gallery">
+        <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 1</div></div>
+        <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 2</div></div>
+        <div class="shot-empty"><div><span>＋</span>Bảng đánh giá nguồn</div></div>
+      </div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Phân tích chiến lược tìm kiếm: vì sao mỗi toán tử lọc đúng nguồn hơn, và em đánh giá độ tin cậy dựa trên điều gì.]</p></div>
+    </div>
+  </article>
+
+  <article class="panel hud project">
+    <div class="num">03</div><div class="head"><span class="src">Bài 3 · Mục 3.4</span><h3>Viết Prompt hiệu quả cho tác vụ học tập</h3></div>
+    <div class="body">
+      <span class="subhead">Mục tiêu</span><p>[So sánh prompt ban đầu &amp; prompt cải tiến, rút ra nguyên tắc.]</p>
+      <span class="subhead">Quá trình</span>
+      <p><strong>Prompt ban đầu:</strong></p><div class="code">[Dán prompt đầu tiên — thường ngắn, chung chung]</div>
+      <p><strong>Prompt cải tiến</strong> (thêm vai trò, bối cảnh, ràng buộc, định dạng):</p><div class="code">[Dán prompt đã cải tiến]</div>
+      <span class="subhead">Sản phẩm — ảnh kết quả AI</span>
+      <div class="gallery">
+        <div class="shot-empty"><div><span>＋</span>Kết quả prompt ban đầu</div></div>
+        <div class="shot-empty"><div><span>＋</span>Kết quả prompt cải tiến</div></div>
+      </div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Vì sao prompt cải tiến cho kết quả tốt hơn — nó định hướng mô hình thế nào.]</p></div>
+    </div>
+  </article>
+
+  <article class="panel hud project">
+    <div class="num">04</div><div class="head"><span class="src">Bài 4 · Mục 4.4</span><h3>Công cụ hợp tác trực tuyến cho dự án nhóm</h3></div>
+    <div class="body">
+      <span class="subhead">Mục tiêu</span><p>[Dùng công cụ quản lý dự án để lập kế hoạch và phối hợp nhóm.]</p>
+      <span class="subhead">Quá trình</span><p>[Nhóm dùng công cụ gì (Trello/Workspace/Teams...), phân công &amp; theo dõi tiến độ ra sao.]</p>
+      <span class="subhead">Sản phẩm — ảnh minh chứng</span>
+      <div class="gallery">
+        <div class="shot-empty"><div><span>＋</span>Bảng công việc</div></div>
+        <div class="shot-empty"><div><span>＋</span>Phân công thành viên</div></div>
+        <div class="shot-empty"><div><span>＋</span>Tiến độ / bình luận</div></div>
+      </div>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Công cụ tối ưu quy trình nhóm thế nào? Tính năng nào hữu ích nhất?]</p></div>
+    </div>
+  </article>
+
+  <article class="panel hud project">
+    <div class="num">05</div><div class="head"><span class="src">Bài 5 · Mục 5.4</span><h3>Dùng AI tạo sinh hỗ trợ sáng tạo nội dung</h3></div>
+    <div class="body">
+      <span class="subhead">Mục tiêu</span><p>[Tạo một sản phẩm số (ảnh / video / bài viết) có AI hỗ trợ.]</p>
+      <span class="subhead">Quá trình</span><p>[Mô tả các bước sản xuất và công cụ AI đã dùng.]</p>
+      <span class="subhead">Sản phẩm</span>
+      <div class="gallery-art">
+        <div class="shot-empty span-2 row-2"><div><span>＋</span>Sản phẩm chính<br>images/san-pham.png</div></div>
+        <div class="shot-empty"><div><span>＋</span>Bản nháp 1</div></div>
+        <div class="shot-empty"><div><span>＋</span>Bản nháp 2</div></div>
+        <div class="shot-empty span-2"><div><span>＋</span>So sánh trước / sau</div></div>
+      </div>
+      <!-- 👉 Video YouTube: thay VIDEO_ID, bỏ comment khối dưới -->
+      <!-- <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video" allowfullscreen></iframe></div> -->
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Em tận dụng AI ở khâu nào? Đâu là phần em tự làm, đâu là phần AI hỗ trợ?]</p></div>
+    </div>
+  </article>
+
+  <article class="panel hud project">
+    <div class="num">06</div><div class="head"><span class="src">Bài 6 · Mục 6.4</span><h3>Sử dụng AI có trách nhiệm trong học tập</h3></div>
+    <div class="body">
+      <span class="subhead">Mục tiêu</span><p>[Xây dựng bộ nguyên tắc cá nhân (5–7 điều) về dùng AI có trách nhiệm.]</p>
+      <span class="subhead">Bộ nguyên tắc của tôi</span>
+      <ul>
+        <li><strong>[Nguyên tắc 1]</strong> — [lý do ngắn gọn].</li>
+        <li><strong>[Nguyên tắc 2]</strong> — [lý do].</li>
+        <li><strong>[Nguyên tắc 3]</strong> — [lý do].</li>
+        <li><strong>[Nguyên tắc 4]</strong> — [lý do].</li>
+        <li><strong>[Nguyên tắc 5]</strong> — [lý do].</li>
+      </ul>
+      <div class="reflect"><span class="label">Phản tư · Vì sao</span><p>[Phân tích các vấn đề đạo đức của AI — thiên kiến, quyền riêng tư, tin sai, liêm chính học thuật — và đề xuất giải pháp.]</p></div>
+    </div>
+  </article>
+
+</div>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 · [Tên của em]</span>
+    <span><a href="conclusion.html">Đọc phần Tổng kết →</a></span>
+  </div>
+</footer>
 
 </body>
 </html>
