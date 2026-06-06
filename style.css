@@ -62,8 +62,8 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opac
 
 .topbar{position:sticky;top:0;z-index:30;background:rgba(242,243,230,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--panel-brd)}
 .nav{max-width:var(--maxw);margin:0 auto;padding:15px 28px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;letter-spacing:.02em;display:inline-flex;align-items:center;gap:9px}
-.brand .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--c-green));box-shadow:0 0 12px var(--green-2);animation:pulse 2.4s ease-in-out infinite}
+.brand{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;letter-spacing:.02em;display:inline-flex;align-items:center}
+.brand .dot{width:10px;height:10px;border-radius:50%;margin-right:9px;background:radial-gradient(circle at 35% 30%,#fff,var(--c-green));box-shadow:0 0 12px var(--green-2);animation:pulse 2.4s ease-in-out infinite}
 .brand span{background:linear-gradient(90deg,var(--c-green),var(--c-teal));-webkit-background-clip:text;background-clip:text;color:transparent}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 .nav-links{display:flex;gap:26px;list-style:none}
@@ -197,3 +197,43 @@ body.modal-open{overflow:hidden}
 @media print{
   .modal-overlay,.detail-btn{display:none!important}
 }
+
+/* ============================================================
+   VÉ DU HÀNH (boarding pass) + 2 cột Điểm mạnh/Sở thích — trang chủ
+   ============================================================ */
+.ticket{display:flex;background:var(--panel);border:1px solid var(--panel-brd);border-radius:20px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 22px 50px -30px rgba(40,90,60,.45),inset 0 1px 0 rgba(255,255,255,.7);overflow:hidden;position:relative;margin-top:6px}
+.ticket-main{flex:1;min-width:0;padding:24px 28px}
+.ticket-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:14px;margin-bottom:18px;border-bottom:1px dashed var(--panel-brd)}
+.t-name{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--c-green)}
+.t-code{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--ink-soft);white-space:nowrap}
+.ticket-body{display:flex;gap:22px}
+.id-photo{width:108px;height:132px;flex:none;border:1.5px dashed var(--c-green);border-radius:12px;background:rgba(116,214,164,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:var(--mono);font-size:.72rem;color:var(--ink-soft);overflow:hidden}
+.id-photo span{font-size:1.5rem;color:var(--c-green);margin-bottom:4px;line-height:1}
+.id-photo img{width:100%;height:100%;object-fit:cover}
+.t-fields{flex:1;min-width:0;display:grid;grid-template-columns:1fr 1fr;gap:15px 22px;align-content:center}
+.t-field .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:3px}
+.t-field .v{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--ink);line-height:1.15}
+.ticket-stub{flex:0 0 104px;border-left:2px dashed var(--panel-brd);padding:22px 12px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;background:rgba(116,214,164,.08);text-align:center}
+.ticket-stub .k{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.ticket-stub .v{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--c-green);line-height:1}
+.barcode{display:flex;gap:2px;align-items:flex-end;height:36px}
+.barcode i{width:2px;height:100%;background:var(--ink);display:block}
+.barcode .b1{width:1px}.barcode .b3{width:3px}
+.stub-id{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;color:var(--ink-soft)}
+.ticket-note{margin-top:18px;color:var(--ink-soft);font-size:1.04rem;max-width:780px}
+.ticket-note strong{color:var(--ink)}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px}
+.duo .panel{padding:24px 28px}
+.duo ul{margin:8px 0 0;list-style:none}
+
+@media (max-width:720px){
+  .ticket{flex-direction:column}
+  .ticket-main{padding:20px 18px}
+  .ticket-body{flex-direction:column;align-items:center}
+  .t-fields{width:100%}
+  .ticket-stub{flex-direction:row;border-left:0;border-top:2px dashed var(--panel-brd);padding:14px 16px;gap:14px}
+  .barcode{height:28px}
+  .duo{grid-template-columns:1fr}
+}
+@media print{.ticket{background:#fff!important;box-shadow:none;backdrop-filter:none;break-inside:avoid}}
