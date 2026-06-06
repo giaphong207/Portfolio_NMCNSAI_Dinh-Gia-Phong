@@ -220,7 +220,7 @@ body.modal-open{overflow:hidden}
 .barcode i{width:2px;height:100%;background:var(--ink);display:block}
 .barcode .b1{width:1px}.barcode .b3{width:3px}
 .stub-id{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;color:var(--ink-soft)}
-.ticket-note{margin-top:18px;color:var(--ink-soft);font-size:1.04rem;max-width:780px}
+.ticket-note{margin-top:18px;color:var(--ink-soft);font-size:1.04rem}
 .ticket-note strong{color:var(--ink)}
 
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px}
