@@ -42,8 +42,13 @@
   <p>Mỗi bài gồm ba phần — <strong>Mục tiêu · Quá trình · Sản phẩm</strong> — kèm một ghi chú suy ngẫm.</p></div>
 </section>
 
-<!-- 💡 CHÈN ẢNH: tạo thư mục images/ ; thay mỗi ô .shot-empty bằng:
-     <figure class="shot"><img src="images/ten-anh.png" alt="mô tả"><figcaption>Chú thích</figcaption></figure> -->
+<!-- 💡 ẢNH BÀI 1–5 ĐÃ GẮN SẴN (theo src). Bỏ đúng tên file vào thư mục images/:
+     Bài 1: cay-thu-muc.jpg
+     Bài 2: bai2-timkiem-1.png | bai2-timkiem-2.png
+     Bài 3: bai3-coban.png | bai3-nangcao.png
+     Bài 4: bai4-trello.png | bai4-docs.png | bai4-drive.png
+     Bài 5: bai5-sanpham.png | bai5-gemini.png | bai5-dalle-tho.png | bai5-dalle-final.png | bai5-canva.png
+     Bài 6: chưa gắn ô ảnh — sẽ làm ở bước sau. -->
 <div class="wrap">
 
   <article class="panel hud project">
@@ -52,13 +57,10 @@
       <span class="subhead">Mục tiêu</span><p>Tổ chức toàn bộ tài liệu học tập theo một hệ thống thư mục khoa học và đặt tên nhất quán, để có thể truy xuất bất kỳ tệp nào trong vài giây và kiểm soát phiên bản hiệu quả.</p>
       <span class="subhead">Quá trình</span><p>Mình thiết kế cây thư mục phân cấp theo chức năng (mỗi môn một nhánh, tách Tài liệu / Bài tập / Tham khảo), thực hành đầy đủ các thao tác trên File Explorer, rồi áp một quy ước đặt tên thống nhất cho mọi tệp.</p>
       <div class="code">[Ngày] _ [Môn] _ [Loại] _ [Phiên bản]
-20260605_NhapMonCNS_BaiTap1_v02.docx</div>
+20260314_NhapMonCNS_AI_BaiTap1_v02.docx</div>
       <span class="subhead">Sản phẩm — ảnh minh hoạ</span>
-      <div class="gallery-art">
-        <div class="shot-empty span-2 row-2"><div><span>＋</span>Ảnh lớn: cây thư mục<br>images/thu-muc.png</div></div>
-        <div class="shot-empty"><div><span>＋</span>Thao tác Copy/Cut</div></div>
-        <div class="shot-empty"><div><span>＋</span>Thùng rác</div></div>
-        <div class="shot-empty span-2"><div><span>＋</span>Ảnh quy tắc đặt tên</div></div>
+      <div class="gallery-stack">
+        <figure class="shot"><img src="images/cay-thu-muc.jpg" alt="Cây thư mục HOC_TAP_2026"><figcaption>Cây thư mục HOC_TAP_2026 &amp; tệp đặt tên theo quy ước</figcaption></figure>
       </div>
       <div class="reflect"><span class="label">Suy ngẫm · Vì sao</span><p>Tiền tố ngày <code>YYYYMMDD</code> giúp hệ điều hành tự sắp xếp tệp theo thời gian; hậu tố phiên bản (v01, v02…) xoá bỏ nỗi ám ảnh "bản cuối cùng thật". Với người học Khoa học Máy tính phải quản lý hàng trăm tệp mã nguồn, cách này là nền tảng để không bao giờ lạc mất một bản nháp.</p></div>
       <button class="detail-btn" data-modal="m1" type="button">Xem báo cáo chi tiết →</button>
@@ -70,15 +72,14 @@
     <div class="body">
       <span class="subhead">Mục tiêu</span><p>Vận dụng các toán tử tìm kiếm nâng cao để khai thác nguồn học thuật chất lượng cho chủ đề <strong>"Ứng dụng AI trong An ninh mạng"</strong>, và đánh giá độ tin cậy của tài liệu theo tiêu chí có hệ thống.</p>
       <span class="subhead">Quá trình</span><p>Mình tìm trên 5 loại nguồn (CSDL học thuật, tạp chí chuyên ngành, sách chuyên khảo, blog hãng bảo mật, báo cáo/tiêu chuẩn) để lọc ra 12 tài liệu, trong đó có 6 bài báo bình duyệt.</p>
-      <div class="code">"deep learning" intrusion detection filetype:pdf
-malware detection site:ieee.org
-machine learning AND (cybersecurity OR "network security")
-"graph neural network" intitle:survey -blog</div>
+      <div class="code">malware detection AND ("deep learning" OR "neural network") filetype:pdf -blog
+"artificial intelligence" cybersecurity site:ieee.org intitle:survey
+"machine learning" intrusion detection filetype:pdf
+adversarial machine learning site:ieee.org</div>
       <span class="subhead">Sản phẩm — ảnh kết quả tìm kiếm</span>
-      <div class="gallery">
-        <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 1</div></div>
-        <div class="shot-empty"><div><span>＋</span>Ảnh truy vấn 2</div></div>
-        <div class="shot-empty"><div><span>＋</span>Bảng đánh giá nguồn</div></div>
+      <div class="gallery-stack">
+        <figure class="shot"><img src="images/bai2-timkiem-1.png" alt="Truy vấn Google Scholar 1"><figcaption>malware detection AND ("deep learning" OR "neural network") filetype:pdf -blog</figcaption></figure>
+        <figure class="shot"><img src="images/bai2-timkiem-2.png" alt="Truy vấn Google Scholar 2"><figcaption>"artificial intelligence" cybersecurity site:ieee.org intitle:survey</figcaption></figure>
       </div>
       <div class="reflect"><span class="label">Suy ngẫm · Vì sao</span><p>Mỗi toán tử đóng một vai trò lọc cụ thể: <code>filetype:pdf</code> ưu tiên tài liệu đầy đủ, <code>site:</code> giới hạn trong nền tảng uy tín, <code>intitle:</code> tìm đúng bài tổng quan, dấu <code>-</code> loại nhiễu. Mình đánh giá độ tin cậy dựa trên 5 tiêu chí, quan trọng nhất là phương pháp nghiên cứu và uy tín nơi xuất bản.</p></div>
       <button class="detail-btn" data-modal="m2" type="button">Xem báo cáo chi tiết →</button>
@@ -92,13 +93,14 @@ machine learning AND (cybersecurity OR "network security")
       <span class="subhead">Quá trình</span>
       <p><strong>Prompt cơ bản</strong> (giải thích Blockchain) — ngắn, chung chung:</p><div class="code">Blockchain là gì? Giải thích giúp tôi.</div>
       <p><strong>Prompt nâng cao</strong> (thêm vai trò, bối cảnh, ràng buộc, tư duy chuỗi):</p><div class="code">Bạn là giáo sư sư phạm. Hãy giải thích Blockchain cho
-sinh viên năm nhất theo 3 bước: (1) bắt đầu bằng một ẩn
-dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
+sinh viên năm nhất theo 3 bước:
+(1) bắt đầu bằng một ẩn dụ quen thuộc,
+(2) liên kết với 3 đặc điểm cốt lõi,
 (3) kết thúc bằng một bài tập tình huống có đáp án.</div>
       <span class="subhead">Sản phẩm — ảnh kết quả AI</span>
-      <div class="gallery">
-        <div class="shot-empty"><div><span>＋</span>Kết quả prompt cơ bản</div></div>
-        <div class="shot-empty"><div><span>＋</span>Kết quả prompt nâng cao</div></div>
+      <div class="gallery-stack">
+        <figure class="shot"><img src="images/bai3-coban.png" alt="Kết quả prompt cơ bản"><figcaption>Prompt cơ bản — định nghĩa khô khan như từ điển</figcaption></figure>
+        <figure class="shot"><img src="images/bai3-nangcao.png" alt="Kết quả prompt nâng cao"><figcaption>Prompt nâng cao — ẩn dụ "cuốn sổ điểm của lớp"</figcaption></figure>
       </div>
       <div class="reflect"><span class="label">Suy ngẫm · Vì sao</span><p>Prompt nâng cao cho kết quả tốt hơn vì nó định hướng mô hình bằng <strong>vai trò</strong> (chọn giọng điệu, độ sâu), <strong>bối cảnh</strong> (chọn đúng đối tượng), <strong>ràng buộc</strong> (kiểm soát độ dài, định dạng) và <strong>tư duy chuỗi</strong> (ép mô hình lập luận theo bước). Prompt Engineering thực chất là một phương pháp luận để tối ưu hoá khả năng của AI.</p></div>
       <button class="detail-btn" data-modal="m3" type="button">Xem báo cáo chi tiết →</button>
@@ -111,10 +113,10 @@ dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
       <span class="subhead">Mục tiêu</span><p>Dùng bộ công cụ cộng tác trực tuyến để lập kế hoạch, phân công và phối hợp nhóm minh bạch theo thời gian thực cho một dự án workshop kỹ năng học tập. Vai trò của mình: <strong>phụ trách nội dung</strong>.</p>
       <span class="subhead">Quá trình</span><p>Nhóm dùng 4 công cụ tạo thành một hệ thống kín: <strong>Trello</strong> (bảng Kanban 5 cột), <strong>Google Docs</strong> (Version History), <strong>Google Drive</strong> (lưu trữ có cấu trúc) và <strong>Microsoft Teams</strong> (liên lạc, chốt quyết định).</p>
       <span class="subhead">Sản phẩm — ảnh minh chứng</span>
-      <div class="gallery">
-        <div class="shot-empty"><div><span>＋</span>Bảng Kanban Trello</div></div>
-        <div class="shot-empty"><div><span>＋</span>Version History trong Docs</div></div>
-        <div class="shot-empty"><div><span>＋</span>Thư mục Drive / Teams</div></div>
+      <div class="gallery-stack">
+        <figure class="shot"><img src="images/bai4-trello.png" alt="Bảng Kanban Trello"><figcaption>Bảng Kanban Trello — Workshop Kỹ năng Học Tập 2026</figcaption></figure>
+        <figure class="shot"><img src="images/bai4-docs.png" alt="Version History trong Google Docs"><figcaption>Version History — đánh dấu đóng góp cá nhân</figcaption></figure>
+        <figure class="shot"><img src="images/bai4-drive.png" alt="Cấu trúc thư mục Google Drive"><figcaption>Google Drive — 4 thư mục con phân loại</figcaption></figure>
       </div>
       <div class="reflect"><span class="label">Suy ngẫm · Vì sao</span><p>Trello cho cả nhóm thấy tiến độ mà không cần họp báo cáo; Version History ghi rõ ai đóng góp gì; Drive và Teams đồng bộ tài liệu tức thì. Bài học lớn nhất: công cụ chỉ là phương tiện — <strong>kỷ luật sử dụng</strong> và tinh thần trách nhiệm mới là yếu tố quyết định thành công.</p></div>
       <button class="detail-btn" data-modal="m4" type="button">Xem báo cáo chi tiết →</button>
@@ -127,11 +129,17 @@ dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
       <span class="subhead">Mục tiêu</span><p>Đóng vai đạo diễn sáng tạo, dùng AI tạo sinh để sản xuất một infographic hoàn chỉnh — <strong>"Bí kíp Master thời gian: Học hết mình, chơi nhiệt tình"</strong> — dành cho sinh viên.</p>
       <span class="subhead">Quá trình</span><p>Quy trình 3 giai đoạn với 3 công cụ AI khác nhau: <strong>Google Gemini</strong> (dàn ý &amp; nội dung) → <strong>DALL-E 3 qua Copilot</strong> (minh hoạ 3D Pixar) → <strong>Canva Magic Write</strong> (biên tập &amp; dàn trang). Tỷ lệ ~40% AI hỗ trợ, 60% công việc cá nhân.</p>
       <span class="subhead">Sản phẩm</span>
-      <div class="gallery-art">
-        <div class="shot-empty span-2 row-2"><div><span>＋</span>Infographic hoàn chỉnh<br>images/san-pham.png</div></div>
-        <div class="shot-empty"><div><span>＋</span>Bản nháp Gemini</div></div>
-        <div class="shot-empty"><div><span>＋</span>Ảnh thô DALL-E 3</div></div>
-        <div class="shot-empty span-2"><div><span>＋</span>So sánh trước / sau Canva</div></div>
+      <div class="art-board">
+        <figure class="shot art-hero">
+          <img src="images/bai5-sanpham.jpg" alt="Infographic Bí kíp Master thời gian hoàn chỉnh">
+          <figcaption>Infographic hoàn chỉnh · 1080×1920</figcaption>
+        </figure>
+        <div class="proc-grid">
+          <figure class="shot"><img src="images/bai5-gemini.png" alt="Dàn ý 3 bước do Gemini tạo"><figcaption>① Gemini — dàn ý 3 bước</figcaption></figure>
+          <figure class="shot"><img src="images/bai5-dalle-tho.png" alt="Ảnh DALL-E bản thô, ô vuông xếp ngang lộn xộn"><figcaption>② DALL-E — bản thô</figcaption></figure>
+          <figure class="shot"><img src="images/bai5-dalle-final.png" alt="Ảnh nền DALL-E sau khi tinh chỉnh prompt"><figcaption>③ DALL-E — sau tinh chỉnh</figcaption></figure>
+          <figure class="shot"><img src="images/bai5-canva.png" alt="Dàn trang và Magic Write trên Canva"><figcaption>④ Canva — Magic Write</figcaption></figure>
+        </div>
       </div>
       <p style="font-family:var(--mono);font-size:.82rem;margin-top:6px">🔗 Xem sản phẩm: <a href="https://canva.link/65wlqa43k0lnfr6" target="_blank" rel="noopener" style="color:var(--c-green)">canva.link/65wlqa43k0lnfr6</a></p>
       <div class="reflect"><span class="label">Suy ngẫm · Vì sao</span><p>AI giúp mình vượt qua "nỗi sợ trang trắng" và rào cản kỹ năng vẽ. Nhưng phần con người — gu thẩm mỹ, đánh giá logic và kỹ năng viết prompt — mới quyết định giá trị cuối cùng. Mình tự làm 60%: viết lại nội dung sát thực tế, chốt bố cục, kiểm soát thiên kiến của AI.</p></div>
@@ -152,6 +160,23 @@ dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
         <li><strong>Ứng xử văn minh số</strong> — không dùng AI để tạo hoặc lan truyền tin giả, nội dung độc hại.</li>
         <li><strong>Cân bằng an sinh số</strong> — áp dụng quy tắc 20-20-20, "cai nghiện số" định kỳ.</li>
       </ul>
+      <span class="subhead">Sản phẩm — Infographic "Cẩm nang Công dân số UET"</span>
+      <div class="art-board b6">
+        <figure class="shot art-hero">
+          <img src="images/bai6-camnang.png" alt="Infographic Cẩm nang Hành trình Công dân số UET">
+          <figcaption>Cẩm nang Công dân số UET</figcaption>
+        </figure>
+        <div class="b6-side">
+          <span class="b6-tag">3 trụ cột</span>
+          <ul>
+            <li><strong>Bộ tư duy cốt lõi</strong> — Human-in-command + Zero Trust AI.</li>
+            <li><strong>Ranh giới (DOs &amp; DON'Ts)</strong> — phân định rõ dùng AI đúng cách với hành vi gian lận.</li>
+            <li><strong>An sinh số</strong> — quy tắc 20-20-20, "cai nghiện số", trân trọng đời sống thực.</li>
+          </ul>
+          <p class="b6-slogan">"AI là động cơ — Bạn là người lái. Tuyệt đối không để chiếc xe tự chạy!"</p>
+        </div>
+      </div>
+      <p style="font-family:var(--mono);font-size:.82rem;margin-top:8px">🔗 Xem sản phẩm trên Canva: <a href="https://canva.link/cruyamuge4yfz30" target="_blank" rel="noopener" style="color:var(--c-green)">canva.link/cruyamuge4yfz30</a></p>
       <div class="reflect"><span class="label">Suy ngẫm · Vì sao</span><p>Chép nguyên văn từ AI vừa vi phạm trung thực, vừa gián tiếp xâm phạm bản quyền của hàng triệu tác giả vô danh trong tập huấn luyện, và gây <strong>suy thoái nhận thức</strong> về lâu dài. Giải pháp: kiểm chứng chéo, viết lại bằng ngôn ngữ của mình, và khai báo minh bạch.</p></div>
       <button class="detail-btn" data-modal="m6" type="button">Xem báo cáo chi tiết →</button>
     </div>
@@ -176,15 +201,19 @@ dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
       <h3>Cấu trúc thư mục đã thiết kế</h3>
       <p>Mình tổ chức theo chức năng để hệ thống có thể mở rộng vô hạn mà vẫn tìm được mọi tệp trong vài giây:</p>
       <div class="code">📁 HOC_TAP_2026/
-├── 📁 NhapMon_CongNgheSo/
+├── 📁 NhapMonCongNgheSo_UngDungAI/
 │   ├── 📁 01_TaiLieu/
 │   ├── 📁 02_BaiTap/
-│   │   ├── 20260605_NhapMonCNS_BaiTap1_v02.docx
-│   │   └── 20260612_NhapMonCNS_BaiTap2_v01.pdf
+│   │   ├── 20260314_NhapMonCNS_AI_BaiTap1_v02.docx
+│   │   └── 20260405_NhapMonCNS_AI_BaiTap2_v01.pdf
 │   ├── 📁 03_ThamKhao/
 │   └── 📁 04_SanPham/
-├── 📁 LapTrinh_C/
-└── 📁 ToanRoiRac/</div>
+├── 📁 LapTrinhNangCao/
+│   ├── 📁 01_TaiLieu/
+│   └── 📁 02_BaiTap/
+└── 📁 ToanRoiRac/
+    ├── 📁 01_TaiLieu/
+    └── 📁 02_BaiTap/</div>
 
       <h3>Quy ước đặt tên</h3>
       <p>Mọi tệp tuân theo một khuôn mẫu thống nhất:</p>
@@ -216,7 +245,7 @@ dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
 
       <h3>5 loại nguồn đã khai thác</h3>
       <ul>
-        <li><strong>Cơ sở dữ liệu học thuật</strong> — IEEE Xplore, ACM Digital Library.</li>
+        <li><strong>Cơ sở dữ liệu học thuật</strong> — IEEE Xplore, ACM Digital Library, Google Scholar.</li>
         <li><strong>Tạp chí chuyên ngành</strong> — IEEE Access, các tạp chí của Elsevier.</li>
         <li><strong>Sách chuyên khảo</strong> — O'Reilly, Packt.</li>
         <li><strong>Blog hãng bảo mật</strong> — CrowdStrike, IBM Security.</li>
@@ -224,11 +253,22 @@ dụ quen thuộc, (2) liên kết với 3 đặc điểm cốt lõi,
       </ul>
 
       <h3>Toán tử tìm kiếm nâng cao</h3>
-      <div class="code">"deep learning" intrusion detection filetype:pdf
-malware detection site:ieee.org
-machine learning AND ("cybersecurity" OR "network security")
-"graph neural network" intitle:survey -blog</div>
-      <p>Mỗi toán tử có vai trò lọc riêng: <code>filetype:pdf</code> ưu tiên tài liệu đầy đủ; <code>site:</code> giới hạn trong nền tảng uy tín như IEEE; <code>intitle:</code> tìm đúng các bài tổng quan; toán tử Boolean <code>AND/OR</code> kết hợp khái niệm liên quan; dấu <code>-</code> loại bỏ kết quả nhiễu.</p>
+      <div class="code">malware detection AND ("deep learning" OR "neural network") filetype:pdf -blog
+"artificial intelligence" cybersecurity site:ieee.org intitle:survey
+"machine learning" intrusion detection filetype:pdf
+adversarial machine learning site:ieee.org</div>
+
+      <h4>Phân tích toán tử tìm kiếm</h4>
+      <p><strong>Vì sao dùng toán tử thay vì gõ từ khoá thường?</strong> Gõ từ khoá thường trả về hàng chục nghìn kết quả lẫn lộn (blog, quảng cáo, tin tức…), tốn thời gian sàng lọc. Toán tử giúp thu hẹp đúng mục tiêu ngay từ đầu, tăng độ chính xác và tiết kiệm công sức.</p>
+      <ul>
+        <li><strong><code>filetype:pdf</code></strong> — Tài liệu học thuật hầu hết ở dạng PDF; lệnh này loại bỏ các trang giới thiệu, blog, chỉ giữ tài liệu đầy đủ có thể trích dẫn.</li>
+        <li><strong><code>site:ieee.org</code></strong> — Giới hạn tìm trong đúng nền tảng uy tín, đảm bảo nguồn đã qua bình duyệt thay vì nội dung trôi nổi.</li>
+        <li><strong><code>intitle:survey</code></strong> — Bắt từ "survey" nằm trong tiêu đề, giúp tìm nhanh các bài tổng quan — lý tưởng để nắm bức tranh toàn cảnh.</li>
+        <li><strong><code>"..."</code> (ngoặc kép)</strong> — Buộc tìm đúng cụm từ nguyên vẹn (vd <code>"machine learning"</code>), tránh tách rời thành hai từ rời rạc.</li>
+        <li><strong><code>AND</code> / <code>OR</code></strong> — <code>AND</code> thu hẹp (phải có cả hai), <code>OR</code> mở rộng (chấp nhận từ đồng nghĩa).</li>
+        <li><strong>Dấu <code>-</code></strong> — Loại trừ kết quả gây nhiễu (vd <code>-blog</code> bỏ các bài blog không chính thống).</li>
+      </ul>
+      <p><strong>Bài học:</strong> Mỗi toán tử là một "bộ lọc" theo một tiêu chí khác nhau. Kết hợp chúng trong một truy vấn giúp mình chuyển từ kiểu tìm "thử và sai" sang một chiến lược tìm kiếm có chủ đích — kỹ năng cốt lõi để khai thác hiệu quả kho tài liệu học thuật khổng lồ.</p>
 
       <h3>5 tiêu chí đánh giá độ tin cậy</h3>
       <ul>
@@ -242,20 +282,20 @@ machine learning AND ("cybersecurity" OR "network security")
       <h3>Bảng đánh giá 12 nguồn</h3>
       <div class="modal-table-wrap">
         <table>
-          <thead><tr><th>#</th><th>Loại nguồn</th><th>Nhận xét</th><th>Độ tin cậy</th></tr></thead>
+          <thead><tr><th>#</th><th>Tài liệu (tác giả, năm)</th><th>Loại</th><th>Độ tin cậy</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Bài báo IEEE</td><td>Bình duyệt, phương pháp rõ, dữ liệu công khai</td><td>Rất cao</td></tr>
-            <tr><td>2</td><td>Bài báo IEEE Access</td><td>Bình duyệt, nhiều trích dẫn</td><td>Rất cao</td></tr>
-            <tr><td>3</td><td>Bài hội nghị ACM</td><td>Bình duyệt, cập nhật</td><td>Rất cao</td></tr>
-            <tr><td>4</td><td>Bài báo Elsevier</td><td>Bình duyệt, chuyên sâu</td><td>Cao</td></tr>
-            <tr><td>5</td><td>Bài tổng quan (survey)</td><td>Tổng hợp tốt, định hướng nghiên cứu</td><td>Cao</td></tr>
-            <tr><td>6</td><td>Bài báo bình duyệt khác</td><td>Phương pháp chắc chắn</td><td>Cao</td></tr>
-            <tr><td>7</td><td>Sách O'Reilly</td><td>Kiến thức nền tốt, hơi tổng quát</td><td>Khá</td></tr>
-            <tr><td>8</td><td>Sách Packt</td><td>Thực hành tốt, ít chiều sâu lý thuyết</td><td>Khá</td></tr>
-            <tr><td>9</td><td>Tài liệu NIST</td><td>Tiêu chuẩn chính thống</td><td>Cao</td></tr>
-            <tr><td>10</td><td>Blog CrowdStrike</td><td>Cập nhật thực tế, có tính thương mại</td><td>Trung bình</td></tr>
-            <tr><td>11</td><td>Blog IBM Security</td><td>Thông tin tốt, cần đối chiếu</td><td>Trung bình</td></tr>
-            <tr><td>12</td><td>Báo cáo kỹ thuật hãng</td><td>Số liệu hữu ích, cần kiểm chứng</td><td>Trung bình</td></tr>
+            <tr><td>1</td><td>ML & deep learning methods for cybersecurity — Xin và cộng sự (2018)</td><td>Bài báo (IEEE Access)</td><td>Rất cao</td></tr>
+            <tr><td>2</td><td>Deep learning for cyber security intrusion detection — Ferrag và cộng sự (2020)</td><td>Bài báo (Elsevier JISA)</td><td>Rất cao</td></tr>
+            <tr><td>3</td><td>Cybersecurity data science: an overview — Sarker và cộng sự (2020)</td><td>Tạp chí (Springer)</td><td>Cao</td></tr>
+            <tr><td>4</td><td>Evading botnet detectors — Apruzzese và cộng sự (2018)</td><td>Hội nghị (IEEE CIS)</td><td>Rất cao</td></tr>
+            <tr><td>5</td><td>ML in cybersecurity: a comprehensive survey — Dasgupta và cộng sự (2022)</td><td>Bài báo</td><td>Cao</td></tr>
+            <tr><td>6</td><td>A survey of deep learning for cyber security — Berman và cộng sự (2019)</td><td>Tạp chí (MDPI)</td><td>Khá</td></tr>
+            <tr><td>7</td><td>Machine Learning and Security — Chio & Freeman (2018)</td><td>Sách (O'Reilly)</td><td>Cao</td></tr>
+            <tr><td>8</td><td>Hands-On AI for Cybersecurity — Parisi (2019)</td><td>Sách (Packt)</td><td>Khá</td></tr>
+            <tr><td>9</td><td>Cost of a Data Breach Report 2023 — IBM (2023)</td><td>Báo cáo (IBM Security)</td><td>Cao</td></tr>
+            <tr><td>10</td><td>2023 Global Threat Report — CrowdStrike (2023)</td><td>Internet (CrowdStrike)</td><td>Khá</td></tr>
+            <tr><td>11</td><td>AI Risk Management Framework — NIST (2023)</td><td>Tiêu chuẩn (NIST)</td><td>Rất cao</td></tr>
+            <tr><td>12</td><td>AI in Cybersecurity: The definitive guide — Marr (2022)</td><td>Internet (Forbes)</td><td>Trung bình</td></tr>
           </tbody>
         </table>
       </div>
@@ -279,11 +319,11 @@ machine learning AND ("cybersecurity" OR "network security")
       <h3>Tác vụ 1 — Tóm tắt một bài luận</h3>
       <div class="modal-table-wrap">
         <table>
-          <thead><tr><th>Cấp độ</th><th>Cách làm &amp; kết quả</th></tr></thead>
+          <thead><tr><th>Cấp độ</th><th>Cách làm</th><th>Nhận xét</th></tr></thead>
           <tbody>
-            <tr><td>Cơ bản</td><td>"Tóm tắt bài này" → bỏ sót thông điệp chính cho phụ huynh.</td></tr>
-            <tr><td>Cải tiến</td><td>Thêm yêu cầu gạch đầu dòng → có cấu trúc nhưng còn máy móc.</td></tr>
-            <tr><td>Nâng cao</td><td>Gán vai chuyên gia, giới hạn số chữ, tập trung vào tác động thực tế → súc tích, đúng trọng tâm.</td></tr>
+            <tr><td>Cơ bản</td><td>"Tóm tắt bài này" — không định hướng.</td><td>Sơ sài: bỏ sót lời khuyên/thông điệp quan trọng ở cuối bài.</td></tr>
+            <tr><td>Cải tiến</td><td>Yêu cầu chia 3 phần, gạch đầu dòng.</td><td>Mạch lạc: có cấu trúc rõ nhưng còn liệt kê máy móc.</td></tr>
+            <tr><td>Nâng cao</td><td>Gán vai chuyên gia, giới hạn 200 chữ, phân tích tác động "kép".</td><td>Xuất sắc: súc tích, đúng trọng tâm, có chiều sâu nghị luận.</td></tr>
           </tbody>
         </table>
       </div>
@@ -299,7 +339,16 @@ sinh viên năm nhất theo 3 bước:
 (3) kết thúc bằng một bài tập tình huống có đáp án.</div>
 
       <h3>Tác vụ 3 — Tạo câu hỏi ôn tập Java OOP</h3>
-      <p>Prompt nâng cao yêu cầu AI tạo bộ câu hỏi theo nhiều mức độ (nhận biết → vận dụng), kèm đáp án và giải thích ngắn, ở định dạng bảng để dễ ôn.</p>
+      <div class="modal-table-wrap">
+        <table>
+          <thead><tr><th>Cấp độ</th><th>Cách làm</th><th>Nhận xét</th></tr></thead>
+          <tbody>
+            <tr><td>Cơ bản</td><td>"Tạo 5 câu hỏi về Java OOP" — không đáp án.</td><td>Sơ sài: câu lý thuyết suông, chỉ kiểm tra trí nhớ.</td></tr>
+            <tr><td>Cải tiến</td><td>Đóng vai giảng viên, trắc nghiệm A–D về Kế thừa &amp; Đa hình, kèm đáp án.</td><td>Khá tốt: ôn nhanh, nhưng vẫn ở mức nhận biết.</td></tr>
+            <tr><td>Nâng cao</td><td>Vai chuyên gia đào tạo, câu hỏi hóc búa + phân tích đoạn mã, xuất ra bảng kèm giải thích cơ chế.</td><td>Chuyên nghiệp: hiểu bản chất vận hành của JVM thay vì học thuộc.</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3>Mô hình 4C của tôi</h3>
       <ul>
@@ -327,10 +376,10 @@ sinh viên năm nhất theo 3 bước:
 
       <h3>Bộ công cụ — một hệ thống kín</h3>
       <ul>
-        <li><strong>Trello</strong> — bảng Kanban 5 cột theo quy trình (Ý tưởng → Đang làm → Review → Chờ duyệt → Hoàn thành). Mọi người thấy tiến độ mà không cần họp báo cáo.</li>
-        <li><strong>Google Docs</strong> — soạn thảo đồng thời và dùng Version History để ghi rõ ai đóng góp gì, khôi phục được mọi phiên bản.</li>
-        <li><strong>Google Drive</strong> — lưu trữ tập trung dưới thư mục "Workshop 2026" với cấu trúc rõ ràng và quy tắc đặt tên.</li>
-        <li><strong>Microsoft Teams</strong> — kênh liên lạc, chốt quyết định và cập nhật tiến độ.</li>
+        <li><strong>Trello</strong> — bảng Kanban 5 cột "Workshop Kỹ năng Học Tập 2026" theo quy trình <em>Ý tưởng → To-do → Đang làm → Đánh giá → Hoàn thành</em>. Mỗi thẻ mình đặt Deadline, gắn Nhãn (Labels) phân loại ưu tiên và dùng Comment để trao đổi trực tiếp — cả nhóm thấy tiến độ mà không cần họp báo cáo.</li>
+        <li><strong>Google Docs</strong> — soạn thảo đồng thời, dùng Version History để ghi rõ ai đóng góp gì (đóng góp của mình được đánh dấu highlight) và khôi phục được mọi phiên bản.</li>
+        <li><strong>Google Drive</strong> — lưu trữ tập trung dưới thư mục "Workshop 2026" với 4 thư mục con (<code>01_Nội dung</code>, <code>02_Slide</code>, <code>03_Hình ảnh</code>, <code>04_Báo cáo</code>), quy tắc đặt tên <code>[Tên file]-[Thành viên]-[Ngày]</code> và cấp quyền Editor cho cả nhóm.</li>
+        <li><strong>Microsoft Teams</strong> — kênh liên lạc chính thức, chốt quyết định và cập nhật tiến độ.</li>
       </ul>
 
       <h3>3 thách thức &amp; cách giải quyết</h3>
@@ -360,8 +409,26 @@ sinh viên năm nhất theo 3 bước:
       <p>Mình yêu cầu Gemini đóng vai chuyên gia tâm lý học đường, lập dàn ý 3 bước (mỗi bước không quá 40 chữ, giọng Gen Z lịch sự). Gemini gợi ý kết hợp Ma trận Eisenhower với kỹ thuật Pomodoro. Sau đó mình <strong>viết lại 60% nội dung</strong> cho sát thực tế: thêm ví dụ cụ thể (ôn thi = làm ngay, dọn KTX = xếp lịch sau), bổ sung app chặn mạng (Forest, Cold Turkey), và thay từ lóng bằng từ chuẩn mực.</p>
 
       <h3>Giai đoạn 2 — Hình ảnh (DALL-E 3 qua Copilot)</h3>
-      <p>Mình muốn góc nhìn drone từ trên cao, hai học sinh thư thái trên thảm cỏ, phong cách 3D Pixar. Qua nhiều lần thử, mình tinh chỉnh prompt: khoá tỷ lệ khung dọc, chốt phong cách Pixar, tạo 3 bảng trắng dọc lớn để có chỗ viết chữ, và thêm một <strong>lệnh phòng thủ</strong> để ngăn AI tự điền chữ:</p>
-      <div class="code">... ABSOLUTELY NO text, NO letters, NO words on the image.</div>
+      <p>Mình muốn góc nhìn drone từ trên cao, hai học sinh thư thái trên thảm cỏ, phong cách 3D Pixar. <strong>Bản thô đầu tiên bị lỗi</strong>: AI vẽ phong cách tả thực, 3 ô trắng hình vuông nhỏ xếp ngang, icon rải rác lộn xộn — không đủ chỗ viết chữ. Qua nhiều lần thử, mình tinh chỉnh prompt theo từng điểm yếu: mở đầu bằng <em>khoá tỷ lệ 9:16</em>, chốt cứng <em>"super cute Pixar style"</em>, ép tạo <em>3 bảng trắng dọc to bản</em>, và thêm <strong>lệnh phòng thủ</strong> <code>"ABSOLUTELY NO text"</code> để ngăn AI tự điền ký tự vô nghĩa vào ô trắng. Prompt hoàn chỉnh:</p>
+      <div class="code">Vertical aspect ratio 9:16. A high-angle, direct overhead (drone view)
+3D animated character illustration in a super cute Pixar style.
+A lush green meadow filled with vibrant wildflowers and a winding dirt path.
+Two cute 3D high school students (a boy in a white shirt and navy tie,
+a girl in a white shirt and plaid skirt) are lying flat on their backs
+side-by-side on the soft grass, smiling and looking up.
+Next to them on the grass are two school backpacks (one blue, one tan)
+and a small stack of textbooks. There is NO laptop in the scene.
+Above them, floating in a bright blue sky with fluffy white clouds,
+are four completely blank, clean white placeholder panels.
+At the very top, one wide empty white banner for a title. Below it,
+three very large, tall, empty white vertical panels, neatly labeled
+with clean circular numbers 1, 2, and 3.
+All white panels and the title banner are entirely blank inside,
+designed for user-added text. Subtle decorative infographic elements
+like a clock, stars, and arrows are placed around the panels.
+ABSOLUTELY NO text, words, or letters are rendered anywhere on the image,
+except for the numbers 1, 2, and 3 in their circles.
+Warm, cheerful morning sunlight.</div>
 
       <h3>Giai đoạn 3 — Hoàn thiện (Canva Magic Write)</h3>
       <p>Mình dàn trang trên Canva, dùng Magic Write để tối ưu ngôn ngữ, rồi thêm các yếu tố sáng tạo: font Lexend Deca, hiệu ứng uốn cong cho tiêu đề, sticker trang trí.</p>
@@ -369,17 +436,24 @@ sinh viên năm nhất theo 3 bước:
       <h3>So sánh 3 công cụ AI</h3>
       <div class="modal-table-wrap">
         <table>
-          <thead><tr><th>Công cụ</th><th>Vai trò</th><th>Điểm mạnh</th></tr></thead>
+          <thead><tr><th>Tiêu chí</th><th>Gemini (Văn bản)</th><th>DALL-E 3 (Hình ảnh)</th><th>Canva AI (Thiết kế)</th></tr></thead>
           <tbody>
-            <tr><td>Gemini</td><td>Sinh nội dung, dàn ý</td><td>Gợi ý nhanh, có cấu trúc</td></tr>
-            <tr><td>DALL-E 3 (Copilot)</td><td>Tạo hình minh hoạ</td><td>Phong cách 3D đẹp, theo prompt</td></tr>
-            <tr><td>Canva Magic Write</td><td>Biên tập &amp; dàn trang</td><td>Tối ưu chữ, công cụ thiết kế</td></tr>
+            <tr><td><strong>Điểm mạnh</strong></td><td>Sinh văn bản cực nhanh, truy cập web cập nhật xu hướng mới, dàn ý logic.</td><td>Render 3D xuất sắc, phối màu đẹp, hiểu prompt tiếng Anh rất tốt.</td><td>Magic Write mượt mà, gợi ý nhiều phong cách văn phong khác nhau.</td></tr>
+            <tr><td><strong>Điểm yếu</strong></td><td>Đôi khi trả lời quá dài dòng, cần người dùng tự chắt lọc và rút gọn lại.</td><td>Khó kiểm soát bố cục lúc đầu (sai hướng, sai kích thước ô), thiếu đồng nhất phong cách.</td><td>Văn phong tiếng Việt đôi khi rập khuôn/quá dài; phụ thuộc kết nối mạng.</td></tr>
+            <tr><td><strong>Đổi quy trình</strong></td><td>Vượt qua "nỗi sợ trang trắng", tiết kiệm ~50% thời gian nghiên cứu.</td><td>Biến người không biết vẽ thành "đạo diễn nghệ thuật", tạo visual bằng câu lệnh.</td><td>Như một "cố vấn ngôn ngữ" — cung cấp nhiều phong cách để chắt lọc, tự hoàn thiện.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h3>Đạo đức &amp; thiên kiến</h3>
-      <p>AI tạo hình thường mặc định một giới tính, nên mình chủ động yêu cầu "một bạn nam và một bạn nữ" để đảm bảo công bằng. Mình cũng minh bạch về vai trò của AI trong sản phẩm.</p>
+      <h3>Vai trò của AI &amp; sự thay đổi quy trình</h3>
+      <p>Trước đây quy trình đi theo đường thẳng: <em>Nghiên cứu → Viết nội dung → Tự vẽ/Tìm ảnh → Thiết kế</em>. Với AI tạo sinh, nó thành một vòng lặp: <em>Lên ý tưởng → Viết Prompt → AI sinh kết quả → Con người Fact-check → Tinh chỉnh</em>. Khi giao phần minh hoạ cho DALL-E và phần biên tập chữ cho Magic Write, mình được giải phóng khỏi giới hạn kỹ năng công cụ, để tập trung vào vai trò <strong>"Đạo diễn" (Art Director)</strong> — người quyết định phong cách, tính logic và thông điệp truyền tải.</p>
+
+      <h3>3 vấn đề đạo đức</h3>
+      <ul>
+        <li><strong>Minh bạch</strong> — trung thực khai báo sản phẩm có sự can thiệp của AI, không mạo nhận toàn bộ là công sức sáng tạo của mình.</li>
+        <li><strong>Bản quyền (Copyright)</strong> — DALL-E 3 được huấn luyện trên hàng triệu tác phẩm của nghệ sĩ, nên có rủi ro "đánh cắp" phong cách; mình giảm thiểu bằng cách dùng phong cách chung (<em>"3D animated character illustration"</em>) thay vì bắt chước một hoạ sĩ cụ thể.</li>
+        <li><strong>Thiên lệch giới (Bias)</strong> — AI hay mặc định một giới khi nhận từ khoá chung "students", nên mình chủ động yêu cầu rõ <em>"a boy… a girl…"</em> để đảm bảo đa dạng và công bằng.</li>
+      </ul>
 
       <h3>Suy ngẫm</h3>
       <p>AI là công cụ gỡ bỏ rào cản kỹ thuật, nhưng phán đoán của con người — gu thẩm mỹ, đánh giá logic và kỹ năng viết prompt — mới quyết định giá trị thực của tác phẩm.</p>
@@ -397,10 +471,21 @@ sinh viên năm nhất theo 3 bước:
     <h2>Bài 6 — Sử dụng AI có trách nhiệm</h2>
     <div class="modal-body">
       <h4>Phân tích chính sách</h4>
-      <p>Mình phân tích chính sách AI của <strong>ĐHQGHN (VNU)</strong> và so sánh với 3 mô hình giáo dục toàn cầu — từ cấm tuyệt đối, đến cho phép tự do, đến <strong>thích ứng có kiểm soát</strong> (Harvard, Yale, Stanford, MIT yêu cầu sinh viên ghi nhận sự cộng tác của AI và trích dẫn prompt). VNU/UET đang đi theo hướng thứ ba này.</p>
+      <p>Mình phân tích chính sách AI của <strong>ĐHQGHN (VNU)</strong> và so sánh với 3 mô hình giáo dục toàn cầu — từ cấm tuyệt đối, đến cho phép tự do, đến <strong>thích ứng có kiểm soát</strong> — như Harvard, Yale, Stanford, RMIT (Úc) — vốn yêu cầu sinh viên ghi nhận sự cộng tác của AI và trích dẫn prompt. VNU/UET đang đi theo hướng thứ ba này.</p>
 
       <h3>Bài tập thực hành — và bài học bất ngờ</h3>
-      <p>Khi làm một literature review về ứng dụng học máy cho tối ưu mạng và phát hiện mã độc, mình phát hiện AI mắc lỗi nghiêm trọng khi kiểm chứng chéo: nó <strong>gán sai nhà xuất bản / nền tảng của các bài báo</strong> (ví dụ gán một bài về phát hiện mã độc cho ResearchGate trong khi thực ra là của IEEE). Ngoài ra, gợi ý của AI thiếu chiều sâu kỹ thuật — liệt kê CNN, GNN, Transformer khá tốt nhưng bỏ qua các thách thức triển khai thực tế như chi phí phần cứng và độ trễ trên thiết bị biên.</p>
+      <p>Nhiệm vụ: tổng hợp tài liệu (literature review) cho bài luận về ứng dụng học máy trong tối ưu hiệu năng mạng &amp; phát hiện mã độc. Mình dùng kỹ thuật gán vai + ngữ cảnh chuyên sâu:</p>
+      <div class="code">Hãy đóng vai một Giáo sư chuyên ngành Mạng máy tính và An toàn
+thông tin tại một trường Đại học Công nghệ hàng đầu. Tôi đang viết
+bài luận tổng quan tài liệu về "Ứng dụng Học máy trong tối ưu hiệu
+năng mạng và phát hiện mã độc". Hãy tổng hợp 3 hướng tiếp cận nghiên
+cứu nổi bật nhất từ 2022 đến nay, kèm tên 3 bài báo khoa học thực tế
+làm minh chứng trích dẫn.</div>
+      <p>AI gợi ý 3 trục — <strong>Deep Learning</strong>, <strong>Graph Neural Network (GNN)</strong> và <strong>Explainable AI (XAI)</strong> — kèm 3 bài báo. Nhưng khi <strong>kiểm chứng chéo</strong> trên Google Scholar, IEEE Xplore, ScienceDirect và SpringerLink, mình phát hiện lỗi nghiêm trọng: AI <strong>gán sai nhà xuất bản / nền tảng của các bài báo</strong> (ví dụ gán một bài về phát hiện mã độc cho ResearchGate trong khi bản gốc là của IEEE). Ngoài ra, gợi ý của AI thiếu chiều sâu kỹ thuật — liệt kê CNN, GNN, Transformer khá tốt nhưng bỏ qua các thách thức triển khai thực tế như chi phí phần cứng và độ trễ trên thiết bị biên.</p>
+      <figure class="modal-fig">
+        <img src="images/bai6-nguon-sai.png" alt="Ba ảnh chụp IEEE Xplore, ScienceDirect và Springer xác nhận nguồn gốc thật của 3 bài báo">
+        <figcaption>Kiểm chứng chéo — nguồn gốc thật của 3 bài báo: <strong>IEEE Xplore</strong>, <strong>ScienceDirect</strong> (Elsevier), <strong>Springer</strong>; khác hẳn nơi AI gán (ResearchGate, Scinapse, Royal Holloway). AI sai ở cả 3 chỗ.</figcaption>
+      </figure>
       <p>Cách khắc phục: gỡ bỏ các link trung gian, lấy bài gốc trực tiếp từ IEEE Xplore, ScienceDirect, SpringerLink, rồi tự viết lại toàn bộ phân tích với nền tảng kỹ thuật vững.</p>
 
       <h3>Bộ 6 nguyên tắc cá nhân</h3>
@@ -413,13 +498,22 @@ sinh viên năm nhất theo 3 bước:
         <li><strong>6. Cân bằng an sinh số</strong> — áp dụng quy tắc 20-20-20 để bảo vệ mắt và "cai nghiện số" định kỳ.</li>
       </ul>
 
-      <h3>Đạo đức &amp; liêm chính học thuật</h3>
-      <p>Dựa trên 6 giá trị liêm chính của ICAI (Trung thực, Tin cậy, Công bằng, Tôn trọng, Trách nhiệm, Dũng cảm), mình nhận ra: chép nguyên văn từ AI vừa là đạo văn gián tiếp với hàng triệu tác giả vô danh trong tập huấn luyện, vừa gây <strong>suy thoái nhận thức (cognitive atrophy)</strong> về lâu dài.</p>
+      <h3>3 vấn đề đạo đức học thuật</h3>
+      <p>Đối chiếu 6 giá trị liêm chính của ICAI (Trung thực, Tin cậy, Công bằng, Tôn trọng, Trách nhiệm, Dũng cảm), mình phân tích 3 vấn đề cốt lõi:</p>
+      <ul>
+        <li><strong>Ranh giới hỗ trợ vs gian lận</strong> — dùng AI để sửa cú pháp, dịch thuật ngữ, tối ưu câu chữ là biểu hiện của <em>Trách nhiệm</em> nâng chất lượng; nhưng giao phó hoàn toàn việc viết bài rồi nhận là của mình là gian lận, vi phạm <em>Trung thực</em> và <em>Công bằng</em> với bạn học.</li>
+        <li><strong>Quyền sở hữu trí tuệ &amp; trích dẫn</strong> — AI tái cấu trúc dữ liệu từ hàng triệu tác phẩm mà không xin phép; chép nguyên văn kết quả AI là gián tiếp xâm phạm bản quyền của những tác giả vô danh trong tập huấn luyện.</li>
+        <li><strong>Tác động đến học tập &amp; kỹ năng</strong> — lạm dụng AI gây <strong>suy thoái nhận thức (cognitive atrophy)</strong>: não bộ mất dần khả năng lập luận, phân tích đa chiều và giải quyết bài toán kỹ thuật thực tế.</li>
+      </ul>
 
-      <h3>Tuyên bố minh bạch (mẫu)</h3>
-      <p>Mình kết thúc mỗi bài viết bằng một lời khai báo rõ ràng về cách dùng AI — giới hạn ở việc gợi ý ý tưởng và tìm từ khoá, chứ không sinh ra lập luận cốt lõi. Thông điệp cốt lõi: <strong>AI là công cụ, không phải vật thay thế cho tư duy.</strong></p>
+      <h3>Tuyên bố minh bạch (trích dẫn AI)</h3>
+      <p>Mình kết thúc bài luận bằng một lời khai báo rõ ràng:</p>
+      <p class="modal-note">"Tác giả có sử dụng mô hình ngôn ngữ lớn ChatGPT (OpenAI, 2026), giới hạn ở bước gợi ý ý tưởng phân loại cấu trúc và tìm từ khoá tổng quan ban đầu. Toàn bộ luận điểm khoa học, số liệu và tài liệu tham khảo đã được tác giả kiểm chứng độc lập và biên soạn lại bằng tư duy cá nhân, đảm bảo tính nguyên bản và liêm chính học thuật."</p>
+      <p>Thông điệp cốt lõi: <strong>AI là công cụ, không phải vật thay thế cho tư duy.</strong></p>
 
-      <a class="pdf-btn" href="https://drive.google.com/file/d/1KlHsERir9Og11Jhpjh2gg69yNYfL3i0W/view?usp=drive_link" target="_blank" rel="noopener">📄 Tải bản PDF gốc (dán link Google Drive vào đây)</a>
+      <p style="font-family:var(--mono);font-size:.85rem">🔗 Sản phẩm (Canva): <a href="https://canva.link/cruyamuge4yfz30" target="_blank" rel="noopener" style="color:var(--c-green)">canva.link/cruyamuge4yfz30</a></p>
+
+      <a class="pdf-btn" href="https://drive.google.com/file/d/1KlHsERir9Og11Jhpjh2gg69yNYfL3i0W/view?usp=drive_link" target="_blank" rel="noopener">📄 Tải bản PDF gốc</a>
     </div>
   </div>
 </div>
